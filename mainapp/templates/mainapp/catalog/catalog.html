@@ -1,3 +1,28 @@
+{% extends 'mainapp/base.html' %}
+
+{% block content %}
+    <h1> Каталог </h1>
+    <br>
+    <div class="product_list">
+        <div class="product">
+            <a href="buccol.html"><img class="catalog_img" src="/static/img/buccol.jpg" alt="/static/img/buccol.jpg"></a>
+            <div class="product_text"> Буссоль БГ-1</div>
+        </div>
+
+        <div class="product">
+            <a href="eclimetr.html"><img class="catalog_img" src="/static/img/eclimetr.jpg" alt="/static/img/eclimetr.jpg"></a>
+            <div class="product_text"> Высотомер </div>
+        </div>
+
+        <div class="product">
+            <a href="fork.html"><img class="catalog_img" src="/static/img/fork.jpg" alt="/static/img/fork.jpg"></a>
+            <div class="product_text"> Мерная вилка </div>
+        </div>
+    </div>
+{% endblock %}
+
+<!--
+
 <!DOCTYPE html>
 <html>
 
@@ -54,3 +79,4 @@
 </body>
 
 <html>
+-->
