@@ -1,5 +1,9 @@
 {% extends 'mainapp/base.html' %}
 
+{% block menu %}
+    {% include 'mainapp/includes/inc__main_menu.html' %}
+{% endblock %}
+
 {% block content %}
     <h1> Контакты </h1>
     <h3 class="title_information"> Напишите нам </h3>
@@ -26,5 +30,6 @@
 
     <p> <b>Адрес:</b> Ленинградская область, Тихвин, Тихвинская улица, 1</p>
 
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A537d424197f38426b4834b4e0dee2ebf07cc5ac74ce480a7ac5025a004312d19&amp;width=700&amp;height=340&amp;lang=ru_RU&amp;scroll=true"></script>
+    <script type="text/javascript" charset="utf-8"
+            async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A537d424197f38426b4834b4e0dee2ebf07cc5ac74ce480a7ac5025a004312d19&amp;width=700&amp;height=340&amp;lang=ru_RU&amp;scroll=true"></script>
 {% endblock %}

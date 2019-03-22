@@ -1,4 +1,9 @@
 {% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block menu %}
+    {% include 'mainapp/includes/inc__main_menu.html' %}
+{% endblock %}
 
 {% block content %}
     <h1> Древние инструменты для таксации лесосек </h1>
@@ -6,5 +11,6 @@
     <h2> 
         Вас приветствут магазин антикварных унструментов для измерительной таксации лесосек.
     </h2>
-    <img src="/static/img/start.jpg" width="600" height="300" alt="/static/img/start.jpg">
+    <img src="{% static 'img/start.jpg' %}" width="600" height="300"
+         alt="{% static 'img/start.jpg' %}">
 {% endblock %}
