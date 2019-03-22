@@ -153,7 +153,7 @@ body {
 .parameters {
     font-style: oblique;
     font-size: 14px;
-    list-style-image: url(catalog/img/list_icon.png);
+    list-style-image: url(/static/img/list_icon.png);
 }
 /* нужно выравнить список текст списков верикально по центру*/
 .parameters_li{
