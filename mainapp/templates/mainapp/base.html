@@ -5,9 +5,7 @@
 <head>
     <meta charset="utf-8">
     <title>
-        {% block title %}
-        Лесные инструменты
-        {% endblock %}
+        Магазин / {{ page_title|default:"страница"|title }}
     </title>
     {% block ccs %}
     <link rel="stylesheet" type="text/css"

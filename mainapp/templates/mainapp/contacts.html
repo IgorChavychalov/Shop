@@ -22,14 +22,19 @@
     </form>
 
     <h3 class="title_information"> Контактная информация </h3>
-    <p>
-        <b>Номер телефона:</b> 9-999-999-99-99
-        <br>
-        <b>Электронный адрес:</b> ppppp@mail.ru
-    </p>
+        {% if locations %}
+            {% for item in locations %}
+                <p>
+                    <b>Номер телефона:</b> {{ item.phone }}
+                    <br>
+                    <b>Электронный адрес:</b> {{ item.email }}
+                </p>
 
-    <p> <b>Адрес:</b> Ленинградская область, Тихвин, Тихвинская улица, 1</p>
-
+                <p> <b>Адрес:</b> {{ item.city }}, {{ item.address }}</p>
+            {% endfor %}
+        {% else%}
+            <h1> Страница в разработке </h1>
+        {% endif %}
     <script type="text/javascript" charset="utf-8"
             async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A537d424197f38426b4834b4e0dee2ebf07cc5ac74ce480a7ac5025a004312d19&amp;width=700&amp;height=340&amp;lang=ru_RU&amp;scroll=true"></script>
 {% endblock %}

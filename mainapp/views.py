@@ -5,12 +5,39 @@ from django.shortcuts import render
 
 # обязательно указывать request!!!
 def index(request):
-    return render(request, 'mainapp/index.html')
+    context = {
+        'page_title': 'главная'
+    }
 
-
-def contacts(request):
-    return render(request, 'mainapp/contacts.html')
+    return render(request, 'mainapp/index.html', context)
 
 
 def catalog(request):
-    return render(request, 'mainapp/catalog/catalog.html')
+    context = {
+        'page_title': 'каталог',
+    }
+
+    return render(request, 'mainapp/catalog/catalog.html', context)
+
+
+def contacts(request):
+    locations = [
+        {
+            'city': 'Тихвин',
+            'phone': '+7-999-999-99-99',
+            'email': 'ppppp@mail.ru',
+            'address': 'Тихвинская улица, 1',
+        },
+        {
+            'city': 'Тихвин',
+            'phone': '+7-888-888-88-88',
+            'email': 'rrrrrr@mail.ru',
+            'address': 'Тихвинская улица, 2',
+        }
+    ]
+    context = {
+        'page_title': 'контакты',
+        'locations': locations
+    }
+
+    return render(request, 'mainapp/contacts.html', context)
