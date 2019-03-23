@@ -45,6 +45,10 @@ body {
 /*    убираем маркеры списка*/
     list-style-type: none;  
 }
+.active {
+    border-bottom: 3px solid #212121;
+}
+
 /*цвет ссылок*/
 .main_link {
     color: red;
