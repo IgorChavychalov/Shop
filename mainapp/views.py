@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from mainapp.models import ProductCategory, Product
 # Create your views here.
 
 
@@ -13,8 +13,10 @@ def index(request):
 
 
 def catalog(request):
+    products = Product.objects.all()
     context = {
         'page_title': 'каталог',
+        'products': products
     }
 
     return render(request, 'mainapp/catalog/catalog.html', context)

@@ -71,7 +71,8 @@ body {
 .product_list {
     height: 400px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     
 }
 .product {
