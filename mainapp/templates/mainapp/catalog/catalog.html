@@ -7,18 +7,19 @@
 
 {% block content %}
     <h1> Каталог </h1>
-    <br>
+
+    {% include 'mainapp/includes/inc__category_menu.html' %}
     <div class="product_list">
 
         {% for object in products %}
-         <!--вариант 1-->
+        <!--вариант 1-->
         <div class="product">
             <img class="catalog_img" src="/media/{{ object.image }}"
                                      alt="/media/{{ object.image }}">
             <div class="product_text"> {{ object.name }} </div>
         </div>
 
-    `   <!--вариант 2-->
+        <!--вариант 2-->
         <div class="product">
             <img class="catalog_img" src="{{ object.image.url }}"
                                      alt="{{ object.image.url }}">

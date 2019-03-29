@@ -1,6 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponseRedirect
 from mainapp.models import ProductCategory, Product
-# Create your views here.
+from django.urls import reverse
 
 
 # обязательно указывать request!!!
@@ -21,6 +21,12 @@ def catalog(request):
 
     return render(request, 'mainapp/catalog/catalog.html', context)
 
+
+def category(request, pk):
+    print(f'выбрали {pk}')
+
+    # return HttpResponseRedirect('/products/')
+    return HttpResponseRedirect(reverse('main:catalog'))
 
 def contacts(request):
     locations = [
