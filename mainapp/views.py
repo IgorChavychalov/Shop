@@ -28,6 +28,7 @@ def category(request, pk):
     # return HttpResponseRedirect('/products/')
     return HttpResponseRedirect(reverse('main:catalog'))
 
+
 def contacts(request):
     locations = [
         {
