@@ -18,8 +18,11 @@ from django.urls import path, re_path, include
 import mainapp.views as mainapp
 
 urlpatterns = [
-    # r'^адрес$'- формируем адрес, контролер, url teg
+
     re_path(r'^', include('mainapp.urls', namespace='main')),
+    re_path(r'^auth/', include('authapp.urls', namespace='auth')),
+
+    # r'^адрес$'- формируем адрес, контролер, url teg
     # re_path(r'^$', mainapp.index, name='index'),
     # re_path(r'^contacts/$', mainapp.contacts, name='contacts'),
     # re_path(r'^catalog/$', mainapp.catalog, name='catalog'),
