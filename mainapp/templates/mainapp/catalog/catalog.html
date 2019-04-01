@@ -11,44 +11,23 @@
     {% include 'mainapp/includes/inc__category_menu.html' %}
     <div class="product_list">
 
-        {% for object in products %}
         <!--вариант 1-->
+        {% for object in products %}
         <div class="product">
             <img class="catalog_img" src="/media/{{ object.image }}"
                                      alt="/media/{{ object.image }}">
             <div class="product_text"> {{ object.name }} </div>
         </div>
 
-        <!--вариант 2-->
-        <div class="product">
-            <img class="catalog_img" src="{{ object.image.url }}"
-                                     alt="{{ object.image.url }}">
-            <div class="product_text"> {{ object.name }} </div>
-        </div>
-
         {% endfor %}
 
-        <div class="product">
-            <a href="buccol.html"><img class="catalog_img"
-                                       src="{% static 'img/buccol.jpg' %}"
-                                       alt="{% static 'img/buccol.jpg' %}">
-            </a>
-            <div class="product_text"> Буссоль БГ-1</div>
-        </div>
+<!--        &lt;!&ndash;вариант 2&ndash;&gt;-->
+<!--        <div class="product">-->
+<!--            <img class="catalog_img" src="{# object.image.url #}"-->
+<!--                                     alt="{# object.image.url #}">-->
+<!--            <div class="product_text"> {# object.name #} </div>-->
+<!--        </div>-->
 
-        <div class="product">
-            <a href="eclimetr.html"><img class="catalog_img"
-                                         src="{% static 'img/eclimetr.jpg' %}"
-                                         alt="{% static 'img/eclimetr.jpg' %}">
-            </a>
-            <div class="product_text"> Высотомер </div>
-        </div>
 
-        <div class="product">
-            <a href="fork.html"><img class="catalog_img" src="{% static 'img/fork.jpg' %}"
-                                                         alt="{% static 'img/fork.jpg' %}">
-            </a>
-            <div class="product_text"> Мерная вилка </div>
-        </div>
     </div>
 {% endblock %}

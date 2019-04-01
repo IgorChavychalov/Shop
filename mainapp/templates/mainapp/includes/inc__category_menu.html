@@ -1,7 +1,12 @@
 <div class="category">
     <ul class="category_list">
-        <li><a class="category_link active" href="{% url 'main:category' 1 %}"> Мерные вилки</a></li>
-        <li><a class="category_link" href="{% url 'main:category' 2 %}"> Буссоли</a></li>
-        <li><a class="category_link" href="{% url 'main:category' 3 %}"> Высотомеры</a></li>
+        <!--active не работает-->
+<!--        {# if pk == 1 #}active{# endif #}-->
+        <li><a class="category_link {% if pk == '1' %}active{% endif %}"
+             href="{% url 'main:category' 1 %}"> Буссоли</a></li>
+        <li><a class="category_link"
+               href="{% url 'main:category' 2 %}"> Мерные вилки</a></li>
+        <li><a class="category_link"
+               href="{% url 'main:category' 3 %}"> Высотомеры</a></li>
     </ul>     
 </div>

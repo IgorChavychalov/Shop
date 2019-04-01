@@ -23,10 +23,22 @@ def catalog(request):
 
 
 def category(request, pk):
-    print(f'выбрали {pk}')
+    # print(f'выбрали {pk}')
+    products = Product.objects.filter(category=pk).all()
+    category_name = Product.objects.filter(category=pk).first()
+    context = {
+        'page_title': f'каталог / {category_name}',
+        'products': products,
+        'pk': pk
+    }
+
+    return render(request, 'mainapp/catalog/catalog.html', context)
 
     # return HttpResponseRedirect('/products/')
-    return HttpResponseRedirect(reverse('main:catalog'))
+    # render(request, pk)
+    # return HttpResponseRedirect(reverse('main:catalog'))
+    # return render(request, 'main:catalog/1.html')
+    # return render(request, HttpResponseRedirect(reverse('main:catalog')), pk)
 
 
 def contacts(request):
