@@ -37,7 +37,7 @@ body {
     margin-right: 50px;
 }
 .main_list {
-    width: 300px;
+    width: 330px;
     display: flex;
     justify-content: space-between;
     font-size: 18px;
