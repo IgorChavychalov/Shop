@@ -1,17 +1,17 @@
 <div class="menu">
     <ul class="main_list">
             <li>
-                <a class="main_link {% if request.resolver_match.url_name == 'main:index' %}active{% endif %}"
+                <a class="main_link {% if request.resolver_match.url_name == 'index'%}active{% endif %}"
                    href="{% url 'main:index' %}"> Главная
                 </a>
             </li>
             <li>
-                <a class="main_link {% if request.resolver_match.url_name == 'main:catalog' %}active{% endif %}"
+                <a class="main_link {% if request.resolver_match.url_name == 'catalog' or request.resolver_match.url_name == 'category'%}active{% endif %}"
                    href="{% url 'main:catalog' %}"> Каталог
                 </a>
             </li>
             <li>
-                <a class="main_link {% if request.resolver_match.url_name == 'main:contacts' %}active{% endif %}"
+                <a class="main_link {% if request.resolver_match.url_name == 'contacts'%}active{% endif %}"
                    href="{% url 'main:contacts' %}"> Контакты
                 </a>
             </li>

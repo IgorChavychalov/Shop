@@ -1,18 +1,19 @@
 <div class="category">
     <ul class="category_list">
-        <!--active не работает-->
-<!--        {# if pk == 1 #}active{# endif #}-->
         <li>
-            <a class="category_link" href="{% url 'main:category' 0 %}">
+            <a class="category_link {% if request.resolver_match.kwargs.pk == '0' %}active{% endif %}"
+               href="{% url 'main:category' 0 %}">
                 Все
             </a>
         </li>
         {% for element in links_menu %}
             <li>
-                <a class="category_link" href="{% url 'main:category' element.pk %}">
+                <a class="category_link {% if request.resolver_match.kwargs.pk|add:0 == element.pk %}active{% endif %}"
+                   href="{% url 'main:category' element.pk %}">
                     {{ element.name }}
                 </a>
             </li>
         {% endfor%}
     </ul>
 </div>
+    <!--  Просмотр содержимого request {# request.resolver_match #}   -->
