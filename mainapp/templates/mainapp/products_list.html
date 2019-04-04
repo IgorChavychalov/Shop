@@ -9,14 +9,16 @@
     <h1> Каталог </h1>
 
     {% include 'mainapp/includes/inc__category_menu.html' %}
+
+    <h2>Категория: "{{ category.name|title }}"</h2>
     <div class="product_list">
 
         <!--вариант 1-->
-        {% for object in products %}
+        {% for product in products %}
         <div class="product">
-            <img class="catalog_img" src="/media/{{ object.image }}"
-                                     alt="/media/{{ object.image }}">
-            <div class="product_text"> {{ object.name }} </div>
+            <img class="catalog_img" src="/media/{{ product.image }}"
+                                     alt="/media/{{ product.image }}">
+            <div class="product_text"> {{ product.name }} </div>
         </div>
 
         {% endfor %}

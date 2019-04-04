@@ -1,0 +1,33 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block menu %}
+    {% include 'mainapp/includes/inc__main_menu.html' %}
+{% endblock %}
+
+{% block content %}
+    <h1> Каталог </h1>
+
+    {% include 'mainapp/includes/inc__category_menu.html' %}
+    <div class="product_list">
+
+        <!--вариант 1-->
+<!--        {# for object in products #}-->
+<!--        <div class="product">-->
+<!--            <img class="catalog_img" src="/media/{# object.image #}"-->
+<!--                                     alt="/media/{# object.image #}">-->
+<!--            <div class="product_text"> {# object.name #} </div>-->
+<!--        </div>-->
+
+<!--        {# endfor #}-->
+
+<!--        &lt;!&ndash;вариант 2&ndash;&gt;-->
+<!--        <div class="product">-->
+<!--            <img class="catalog_img" src="{# object.image.url #}"-->
+<!--                                     alt="{# object.image.url #}">-->
+<!--            <div class="product_text"> {# object.name #} </div>-->
+<!--        </div>-->
+
+
+    </div>
+{% endblock %}

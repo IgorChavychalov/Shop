@@ -10,7 +10,7 @@ urlpatterns = [
     # альтернативный вариант
     # path('<int:pk>/', mainapp.category, name='category'),
     re_path(r'^category/(?P<pk>\d+)/$', mainapp.category, name='category'),
-    re_path(r'^category/$', mainapp.category, name='category'),
+    # re_path(r'^category/$', mainapp.category, name='category'),
 
     re_path(r'^catalog/$', mainapp.catalog, name='catalog'),
 ]
