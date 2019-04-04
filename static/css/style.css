@@ -31,13 +31,12 @@ body {
 /*== меню ==*/
 /*список ссылок*/
 .menu {
-    width: 300px;
     height: 90px;
     margin-top: 10px;
     margin-right: 50px;
 }
 .main_list {
-    width: 330px;
+    width: 400px;
     display: flex;
     justify-content: space-between;
     font-size: 18px;
@@ -96,14 +95,13 @@ body {
 }
 
 .product_list {
-    height: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     
 }
 .product {
-    margin: 0 10px;
+    margin: 10px 10px;
     width: 130px;
     height: 180px;
     border: 2px solid #707070;

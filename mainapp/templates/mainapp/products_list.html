@@ -11,16 +11,21 @@
     {% include 'mainapp/includes/inc__category_menu.html' %}
 
     <h2>Категория: "{{ category.name|title }}"</h2>
+<!--    <h2>Категория: "{# products.0.category.name|title #}"</h2>-->
     <div class="product_list">
 
         <!--вариант 1-->
         {% for product in products %}
-        <div class="product">
-            <img class="catalog_img" src="/media/{{ product.image }}"
-                                     alt="/media/{{ product.image }}">
-            <div class="product_text"> {{ product.name }} </div>
-        </div>
-
+            <div class="product">
+                <a href="{% url 'basket:add' product.pk %}">
+                    <img class="catalog_img"
+                        src="/media/{{ product.image }}"
+                        alt="/media/{{ product.image }}">
+                </a>
+                <div class="product_text">
+                    {{ product.name }}
+                </div>
+            </div>
         {% endfor %}
 
 <!--        &lt;!&ndash;вариант 2&ndash;&gt;-->

@@ -2,11 +2,17 @@
     <ul class="category_list">
         <!--active не работает-->
 <!--        {# if pk == 1 #}active{# endif #}-->
-        <li><a class="category_link {% if pk == '1' %}active{% endif %}"
-             href="{% url 'main:category' 1 %}"> Буссоли</a></li>
-        <li><a class="category_link"
-               href="{% url 'main:category' 2 %}"> Мерные вилки</a></li>
-        <li><a class="category_link"
-               href="{% url 'main:category' 3 %}"> Высотомеры</a></li>
-    </ul>     
+        <li>
+            <a class="category_link" href="{% url 'main:category' 0 %}">
+                Все
+            </a>
+        </li>
+        {% for element in links_menu %}
+            <li>
+                <a class="category_link" href="{% url 'main:category' element.pk %}">
+                    {{ element.name }}
+                </a>
+            </li>
+        {% endfor%}
+    </ul>
 </div>

@@ -20,7 +20,7 @@ import mainapp.views as mainapp
 urlpatterns = [
     re_path(r'^', include('mainapp.urls', namespace='main')),
     re_path(r'^auth/', include('authapp.urls', namespace='auth')),
-
+    re_path(r'^basket/', include('basketapp.urls', namespace='basket')),
     # теперь вызываются через пространство имён
     # r'^адрес$'- формируем адрес, контролер, url teg
     # re_path(r'^$', mainapp.index, name='index'),

@@ -29,6 +29,11 @@
                     <a class="main_link" href="{% url 'auth:login' %}"> Войти </a>
                 {% endif %}
             </li>
+
+            <a href="" class="main_link basket"><img src="/static/img/basket.png" alt="/static/img/basket.png">
+                    {% if basket %} {{ basket|length }} {% endif %}
+            </a>
     </ul>
     <!--  Просмотр содержимого request {# request.resolver_match.url_name #}   -->
+
 </div>
