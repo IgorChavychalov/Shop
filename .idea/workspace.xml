@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00ed52f0-32d1-4a6e-9d26-6acdbead273a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/СКРИНШОТЫ/5/cmd1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/СКРИНШОТЫ/5/cmd2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainapp/templates/mainapp/includes/inc__category_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/includes/inc__category_menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainapp/templates/mainapp/includes/inc__main_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/includes/inc__main_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/СКРИНШОТЫ/cmd-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/СКРИНШОТЫ/cmd-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/СКРИНШОТЫ/cmd-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/СКРИНШОТЫ/Вопрос.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,8 +103,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/includes/inc__category_menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+            <state relative-caret-position="264">
+              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -283,6 +288,11 @@
               <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="СКРИНШОТЫ" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -491,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554374923144</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="ДЗ-5:&#10;    -register/update&#10;    -категории&#10;    -добавлены товары&#10;    -basket&#10;    -чиним категории">
+      <created>1554376519466</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1554376519466</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -505,7 +522,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1753" height="954" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49757674" visible="true" weight="0.17355853" />
       <window_info id="Structure" order="1" sideWeight="0.5024233" side_tool="true" weight="0.11531741" />
@@ -617,7 +633,8 @@
     <MESSAGE value="ДЗ-5:&#10;    -register/update" />
     <MESSAGE value="ДЗ-5:&#10;    -register/update&#10;    -категории&#10;    -добавлены товары" />
     <MESSAGE value="ДЗ-5:&#10;    -register/update&#10;    -категории&#10;    -добавлены товары&#10;    -basket" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ-5:&#10;    -register/update&#10;    -категории&#10;    -добавлены товары&#10;    -basket" />
+    <MESSAGE value="ДЗ-5:&#10;    -register/update&#10;    -категории&#10;    -добавлены товары&#10;    -basket&#10;    -чиним категории" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ-5:&#10;    -register/update&#10;    -категории&#10;    -добавлены товары&#10;    -basket&#10;    -чиним категории" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/base.html___jb_tmp___" />
@@ -925,8 +942,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/includes/inc__category_menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        <state relative-caret-position="264">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
         </state>
       </provider>
     </entry>
