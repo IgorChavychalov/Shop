@@ -33,10 +33,8 @@ body {
 .menu {
     height: 90px;
     margin-top: 10px;
-    margin-right: 50px;
 }
 .main_list {
-    width: 400px;
     display: flex;
     justify-content: space-between;
     font-size: 18px;
@@ -50,7 +48,8 @@ body {
 /*цвет ссылок*/
 .main_link {
     color: red;
-    text-decoration: none
+    text-decoration: none;
+    margin: 0px 5px;
 }
 
 .main_link:hover {

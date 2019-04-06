@@ -29,10 +29,15 @@
                     <a class="main_link" href="{% url 'auth:login' %}"> Войти </a>
                 {% endif %}
             </li>
-
-            <a href="" class="main_link basket"><img src="/static/img/basket.png" alt="/static/img/basket.png">
-                    {% if basket %} {{ basket|length }} {% endif %}
-            </a>
+            <li>
+                <a href="" class="main_link basket"><img src="/static/img/basket.png" width="20" height="20"
+                                                         alt="/static/img/basket.png">
+                    {% if basket %}
+                        {{ basket.0.total_cost|floatformat:0 }} руб
+                        ({{ basket.0.total_quantity }} шт)
+                    {% endif %}
+                </a>
+            </li>
     </ul>
     <!--  Просмотр содержимого request {# request.resolver_match.url_name #}   -->
 
