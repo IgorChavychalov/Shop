@@ -124,7 +124,15 @@ body {
 .product:hover .product_text {
     color: red;
 }
-    
+
+.novelty {
+    display: flex;
+}
+
+.text-block {
+    margin-left: 30px;
+
+}
 /*
 .img_link {
     width: 100px;
@@ -159,13 +167,29 @@ body {
     border-radius: 10px 10px 10px 10px;  
     float: left;
 }
-
-.buy:hover {
-    border: 5px solid greenyellow;
+.buy {
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 23px;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    text-decoration: none;
 }
-
+.buy:hover {
+    background-color: #f7f7f7;
+}
+buy:active {
+    box-shadow: 0 0px 5px 1px rgba(33, 33, 33, 0.35);
+    position: relative;
+    top: 2px;
+}
 .product_img:hover {
-    border: 10px solid #f8f8f8;
+    outline: 10px solid #f8f8f8;
 }
 
 /*все заголовки h3 с характеристиками товара*/

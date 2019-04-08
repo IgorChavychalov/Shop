@@ -9,25 +9,43 @@
     <h1> Каталог </h1>
 
     {% include 'mainapp/includes/inc__category_menu.html' %}
+
+    <div class="novelty">
+        <div class="big_img_product">
+            <a href="#">
+                <img class="product_img" src="/media/{{ hot_product.image }}"
+                                         alt="/media/{{ hot_product.image }}">
+            </a>
+        </div>
+        <div class="text-block">
+            <h3 class="titles_good">Новинка</h3>
+            <h3>{{ hot_product.name }}</h3>
+            <h3>{{ hot_product.price }}</h3>
+            <a class="buy" href="{% url 'basket:add' hot_product.pk %}">
+                Купиь
+            </a>
+            <h3 class="titles_good"> Описание товара </h3>
+            <p class="sort_description">
+                {{ hot_product.description }}
+            </p>
+        </div>
+    </div>
+
+    <h3 class="titles_good">Похожие товары </h3>
+
     <div class="product_list">
-
-        <!--вариант 1-->
-<!--        {# for object in products #}-->
-<!--        <div class="product">-->
-<!--            <img class="catalog_img" src="/media/{# object.image #}"-->
-<!--                                     alt="/media/{# object.image #}">-->
-<!--            <div class="product_text"> {# object.name #} </div>-->
-<!--        </div>-->
-
-<!--        {# endfor #}-->
-
-<!--        &lt;!&ndash;вариант 2&ndash;&gt;-->
-<!--        <div class="product">-->
-<!--            <img class="catalog_img" src="{# object.image.url #}"-->
-<!--                                     alt="{# object.image.url #}">-->
-<!--            <div class="product_text"> {# object.name #} </div>-->
-<!--        </div>-->
-
+        {% for item in same_products %}
+            <div class="product">
+                <a href="">
+                    <img class="catalog_img"
+                        src="/media/{{ item.image }}"
+                        alt="/media/{{ item.image }}">
+                </a>
+                <div class="product_text">
+                    {{ item.name }}
+                </div>
+            </div>
+        {% endfor %}
 
     </div>
 {% endblock %}
