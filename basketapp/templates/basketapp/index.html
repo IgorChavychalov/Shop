@@ -1,0 +1,12 @@
+{% extends 'basketapp/base.html' %}
+{% load static %}
+
+{% block menu %}
+    {% include 'basketapp/includes/inc__main_menu.html' %}
+{% endblock %}
+
+{% block content %}
+    <div class="basket-list">
+        {% include 'basketapp/includes/inc__basket_list.html' %}
+    </div>
+{% endblock %}

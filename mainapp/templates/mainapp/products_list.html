@@ -17,7 +17,7 @@
         <!--вариант 1-->
         {% for product in products %}
             <div class="product">
-                <a href="{% url 'basket:add' product.pk %}">
+                <a href="{% url 'main:product' product.pk %}">
                     <img class="catalog_img"
                         src="/media/{{ product.image }}"
                         alt="/media/{{ product.image }}">

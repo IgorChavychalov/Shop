@@ -30,31 +30,27 @@ def get_same_products(hot_product):
 
 def index(request):
     context = {
-        'page_title': 'главная',
+        'title': 'главная',
         'basket': get_basket(request),
     }
     return render(request, 'mainapp/index.html', context)
 
 
 def catalog(request):
-    links_menu = ProductCategory.objects.all()
-
     hot_product = get_hot_product()
     same_products = get_same_products(hot_product)
 
     context = {
-        'page_title': 'каталог',
+        'title': 'каталог',
+        'links_menu': ProductCategory.objects.all(),
+        'basket': get_basket(request),
         'hot_product': hot_product,
         'same_products': same_products,
-        'links_menu': links_menu,
-        'basket': get_basket(request),
     }
     return render(request, 'mainapp/catalog.html', context)
 
 
 def category(request, pk):
-    links_menu = ProductCategory.objects.all()
-
     if int(pk) == 0:
         category = {'name': 'все'}
         products = Product.objects.all().order_by('price')
@@ -64,14 +60,28 @@ def category(request, pk):
         # альтернативный вариант
         # products = Product.objects.filter(category__pk=pk).order_by('price')
 
-    content = {
+    context = {
         'title': 'продукты',
-        'links_menu': links_menu,
+        'links_menu': ProductCategory.objects.all(),
+        'basket': get_basket(request),
         'category': category,
         'products': products,
-        'basket': get_basket(request),
     }
-    return render(request, 'mainapp/products_list.html', content)
+    return render(request, 'mainapp/products_list.html', context)
+
+
+def product(request, pk):
+    hot_product = get_hot_product()
+    same_products = get_same_products(hot_product)
+
+    context = {
+        'title': 'продукты',
+        'links_menu': ProductCategory.objects.all(),
+        'basket': get_basket(request),
+        'object': get_object_or_404(Product, pk=pk),
+        'same_products': same_products,
+    }
+    return render(request, 'mainapp/product.html', context)
 
 
 def contacts(request):

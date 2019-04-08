@@ -30,8 +30,9 @@
                 {% endif %}
             </li>
             <li>
-                <a href="{% url 'basket:index' %}" class="main_link basket"><img src="/static/img/basket.png" width="20" height="20"
-                                                         alt="/static/img/basket.png">
+                <a href="{% url 'basket:index' %}" class="main_link basket {% if request.resolver_match.url_name == 'basket'%}active{% endif %}">
+                    <img src="/static/img/basket.png" width="20" height="20"
+                         alt="/static/img/basket.png">
                     {% if basket %}
                         {{ basket.0.total_cost|floatformat:0 }} руб
                         ({{ basket.0.total_quantity }} шт)

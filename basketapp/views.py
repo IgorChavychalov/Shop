@@ -4,7 +4,14 @@ from mainapp.models import Product
 
 
 def index(request):
-    pass
+    basket_items = request.user.basket.order_by('product__category')
+
+    content = {
+        'title': 'корзина',
+        'basket_items': basket_items,
+    }
+
+    return render(request, 'basketapp/index.html', content)
 
 
 def add(request, pk):
@@ -18,5 +25,11 @@ def add(request, pk):
 
     basket.quantity += 1
     basket.save()
+
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+
+
+def remove(request, pk):
+    get_object_or_404(Basket, pk=pk).delete()
 
     return HttpResponseRedirect(request.META.get('HTTP_REFERER'))

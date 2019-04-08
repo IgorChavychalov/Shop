@@ -6,27 +6,26 @@
 {% endblock %}
 
 {% block content %}
-    <h1> Каталог </h1>
+    <h1> Продукт </h1>
 
     {% include 'mainapp/includes/inc__category_menu.html' %}
 
     <div class="novelty">
         <div class="big_img_product">
             <a href="#">
-                <img class="product_img" src="/media/{{ hot_product.image }}"
-                                         alt="/media/{{ hot_product.image }}">
+                <img class="product_img" src="/media/{{ object.image }}"
+                                         alt="/media/{{ object.image }}">
             </a>
         </div>
         <div class="text-block">
-            <h3 class="titles_good">Новинка</h3>
-            <h3>{{ hot_product.name }}</h3>
-            <h3>{{ hot_product.price }}</h3>
-            <a class="buy" href="{% url 'basket:add' hot_product.pk %}">
+            <h3>{{ object.name }}</h3>
+            <h3>{{ object.price }}</h3>
+            <a class="buy" href="{% url 'basket:add' object.pk %}">
                 Купиь
             </a>
             <h3 class="titles_good"> Описание товара </h3>
             <p class="sort_description">
-                {{ hot_product.description }}
+                {{ object.description }}
             </p>
         </div>
     </div>
