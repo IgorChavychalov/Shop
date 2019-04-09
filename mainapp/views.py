@@ -12,13 +12,6 @@ def get_basket(request):
         return []
 
 
-# def get_hot_product():
-#     products = Product.objects.all()
-#     hot_list = []
-#     for i in range(5):
-#         hot_list.append(random.choice(products))
-#     return hot_list
-
 def get_hot_product():
     return random.choice(Product.objects.all())
 

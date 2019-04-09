@@ -7,9 +7,7 @@
 
 {% block content %}
     <h1> Каталог </h1>
-
     {% include 'mainapp/includes/inc__category_menu.html' %}
-
     <div class="novelty">
         <div class="big_img_product">
             <a href="#">
@@ -30,9 +28,7 @@
             </p>
         </div>
     </div>
-
     <h3 class="titles_good">Похожие товары </h3>
-
     <div class="product_list">
         {% for item in same_products %}
             <div class="product">
@@ -46,6 +42,5 @@
                 </div>
             </div>
         {% endfor %}
-
     </div>
 {% endblock %}

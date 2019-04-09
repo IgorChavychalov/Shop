@@ -7,7 +7,6 @@
 {% block content %}
     <h1> Контакты </h1>
     <h3 class="title_information"> Напишите нам </h3>
-
     <form action="">
         Имя <input class="input_name" type="text" placeholder="Михаил">
         <br>
@@ -20,7 +19,6 @@
         <button type="submit"> Отправить</button>
         <button type="reset">Удалить</button>
     </form>
-
     <h3 class="title_information"> Контактная информация </h3>
         {% if locations %}
             {% for item in locations %}
@@ -29,7 +27,6 @@
                     <br>
                     <b>Электронный адрес:</b> {{ item.email }}
                 </p>
-
                 <p> <b>Адрес:</b> {{ item.city }}, {{ item.address }}</p>
             {% endfor %}
         {% else%}

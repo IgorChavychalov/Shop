@@ -17,7 +17,6 @@
 
 <body>
     <div class="container">
-       
         <div class="header">
             <div class="logo">
                 <a href="{% url 'main:index' %}"><img src="{% static 'img/logo.png' %}"
@@ -27,17 +26,14 @@
             {% block menu %}
             {% endblock %}
         </div>
-
         <div class="content">
             {% block content %}
             {% endblock %}
         </div>
-
         <div class="footer">
             &copy; Все права защищены
         </div>
     </div>
-    
 </body>
 
 <html>
