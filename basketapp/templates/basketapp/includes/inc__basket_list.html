@@ -1,12 +1,12 @@
 {% for item in basket_items %}
     <div class="basket_record">
-        <img class="basket_img" src="/media/{{ item.product.image }}" alt="{{ item.product.short_desc }}">
+        <img class="basket_img" src="/media/{{ item.product.image }}" width="140px" height="140px" alt="{{ item.product.short_desc }}">
         <span class="category_name">{{ item.product.category.name }}</span> 
         <span class="product_name">{{ item.product.name }}</span>
         <span class="product_price">{{ item.product.price }}&nbspруб</span>
         <input type="number" name="{{ item.pk }}" min="0" value="{{ item.quantity }}">
         <span class="product_cost">{{ item.product_cost }}&nbspруб</span>
-        <a href="{% url 'basket:remove' item.pk %}" class="buy">
+        <a href="{% url 'basket:remove' item.pk %}" class="btn">
             удалить
         </a>
     </div>
@@ -17,7 +17,7 @@
         В корзине {{ basket_items.0.total_quantity }} товаров общей стоимостью
         {{ basket_items.0.total_cost }} руб
 
-        <a href="{% url 'main:index' %}" class="btn btn-round">
+        <a href="{% url 'main:index' %}" class="btn">
         на главную
         </a>
     </h3>

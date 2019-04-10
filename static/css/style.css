@@ -33,13 +33,17 @@ body {
 .menu {
     height: 90px;
     margin-top: 10px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
 .main_list {
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
 /*    убираем маркеры списка*/
-    list-style-type: none;  
+    list-style-type: none;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 .active {
     border-bottom: 3px solid #212121;
@@ -167,7 +171,7 @@ body {
     border-radius: 10px 10px 10px 10px;  
     float: left;
 }
-.buy {
+.btn {
     box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
     border-radius: 23px;
     background-color: #ffffff;
@@ -177,13 +181,12 @@ body {
     font-weight: 700;
     color: black;
     text-transform: uppercase;
-    letter-spacing: 3.6px;
     text-decoration: none;
 }
-.buy:hover {
+.btn:hover {
     background-color: #f7f7f7;
 }
-buy:active {
+btn:active {
     box-shadow: 0 0px 5px 1px rgba(33, 33, 33, 0.35);
     position: relative;
     top: 2px;
@@ -317,4 +320,47 @@ p:first-letter {
     position: relative;
     display: block;
     float: left;
+}
+
+.btn-add {
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 23px;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.btn-add:hover {
+    background-color: #f7f7f7;
+    text-decoration: none;
+}
+btn-add:active {
+    box-shadow: 0 0px 5px 1px rgba(33, 33, 33, 0.35);
+    position: relative;
+    top: 2px;
+    text-decoration: none;
+}
+.user_role {
+    width: 150px;
+}
+.user_record {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.menu-admin {
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.new_user{
+    margin: 30px 40%;
 }
