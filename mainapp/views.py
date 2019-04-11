@@ -60,7 +60,7 @@ def category(request, pk):
         'category': category,
         'products': products,
     }
-    return render(request, 'mainapp/products_list.html', context)
+    return render(request, 'mainapp/product_list.html', context)
 
 
 def product(request, pk):

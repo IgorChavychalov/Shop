@@ -5,10 +5,9 @@
     <form class="form-horizontal" method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
-        <br>
         <input class="form-control" type="submit" value="сохранить">
     </form>
-    <a href="{% url 'main:index' %}" class="btn btn-primary form-control">
-        на главную
+    <a class="btn btn-primary form-control last" href="{% url 'myadmin:index' %}">
+        к списку пользователей
     </a>
 {% endblock %}

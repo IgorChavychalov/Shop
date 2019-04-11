@@ -171,6 +171,7 @@ body {
     border-radius: 10px 10px 10px 10px;  
     float: left;
 }
+/*
 .btn {
     box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
     border-radius: 23px;
@@ -191,6 +192,7 @@ btn:active {
     position: relative;
     top: 2px;
 }
+*/
 .product_img:hover {
     outline: 10px solid #f8f8f8;
 }
@@ -363,4 +365,36 @@ btn-add:active {
 }
 .new_user{
     margin: 30px 40%;
+}
+.category_record {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.category_name {
+    margin: 8px 50px;
+    font-size: 18px;
+}
+.product_record {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.product_name {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product_actions {
+    width: 150px;
+}
+
+.summary {
+    padding: 0 20px;
+}
+
+.not_active {
+    opacity: 0.3;
 }

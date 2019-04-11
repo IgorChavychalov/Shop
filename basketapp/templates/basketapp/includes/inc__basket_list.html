@@ -6,7 +6,7 @@
         <span class="product_price">{{ item.product.price }}&nbspруб</span>
         <input type="number" name="{{ item.pk }}" min="0" value="{{ item.quantity }}">
         <span class="product_cost">{{ item.product_cost }}&nbspруб</span>
-        <a href="{% url 'basket:remove' item.pk %}" class="btn">
+        <a href="{% url 'basket:remove' item.pk %}" class="btn-add">
             удалить
         </a>
     </div>
@@ -17,7 +17,7 @@
         В корзине {{ basket_items.0.total_quantity }} товаров общей стоимостью
         {{ basket_items.0.total_cost }} руб
 
-        <a href="{% url 'main:index' %}" class="btn">
+        <a href="{% url 'main:index' %}" class="btn-add">
         на главную
         </a>
     </h3>
