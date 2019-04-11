@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, HttpResponseRedirect
 from django.contrib.auth.decorators import user_passes_test
 from django.urls import reverse
 
-from adminapp.forms import ShopUserCreationAdminForm, ShopUserUpdateAdminForm
+from adminapp.forms import ShopUserCreationAdminForm, ShopUserUpdateAdminForm, ProductCategoryEditForm
 from mainapp.models import ProductCategory
 from authapp.models import ShopUser
 
@@ -20,7 +20,7 @@ def index(request):
 
 @user_passes_test(lambda x: x.is_superuser)
 def categories(request):
-    object_list = ProductCategory.objects.all()
+    object_list = ProductCategory.objects.all().order_by('-is_active', 'name')
 
     context = {
         'title': 'админка/категории',
@@ -86,3 +86,19 @@ def shopuser_delete(request, pk):
         'user_to_delete': object
     }
     return render(request, 'adminapp/shopuser_delete.html', context)
+
+
+def productcategory_update(request, pk):
+    current_object = get_object_or_404(ProductCategory, pk=pk)
+    if request.method == 'POST':
+        form = ProductCategoryEditForm(request.POST, request.FILES, instance=current_object)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect(reverse('myadmin:categories'))
+    else:
+        form = ProductCategoryEditForm(instance=current_object)
+    context = {
+        'title': 'категории/редактирование',
+        'form': form
+    }
+    return render(request, 'adminapp/productcategory_update.html', context)

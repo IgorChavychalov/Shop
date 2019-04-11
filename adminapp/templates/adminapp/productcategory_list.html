@@ -7,7 +7,7 @@
             новая категория
         </a>
     {% for object in object_list %}
-    <div class="category_record">
+    <div class="category_record {% if not object.is_active %}not_active{% endif %}">
         <div class="category_name">
             {{ object.name|title }}
         </div>
@@ -15,7 +15,7 @@
                 <a class="btn-add" href="{% url 'myadmin:products' object.pk %}">
                     товары категории
                 </a>
-                <a class="btn-add" href="{# url 'myadmin:category_update' object.pk #}">
+                <a class="btn-add" href="{% url 'myadmin:productcategory_update' object.pk %}">
                     редактировать
                 </a>
                 <a class="btn-add" href="{# url 'myadmin:category_delete' object.pk #}">
