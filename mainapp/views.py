@@ -13,12 +13,16 @@ def get_basket(request):
 
 
 def get_hot_product():
-    return random.choice(Product.objects.all())
+    return random.choice(Product.objects.filter(is_active=True))
 
 
 def get_same_products(hot_product):
     # ограничемься выводом 4х товаров
-    return hot_product.category.product_set.exclude(pk=hot_product.pk)[:4]
+    return hot_product.category.product_set.filter(is_active=True).exclude(pk=hot_product.pk)[:4]
+
+
+def get_nemu():
+    return ProductCategory.objects.filter(is_active=True)
 
 
 def index(request):
@@ -35,7 +39,7 @@ def catalog(request):
 
     context = {
         'title': 'каталог',
-        'links_menu': ProductCategory.objects.all(),
+        'links_menu': get_nemu(),
         'basket': get_basket(request),
         'hot_product': hot_product,
         'same_products': same_products,
@@ -46,16 +50,15 @@ def catalog(request):
 def category(request, pk):
     if int(pk) == 0:
         category = {'name': 'все'}
-        products = Product.objects.all().order_by('price')
+        products = Product.objects.filter(is_active=True, category__is_active=True).order_by('price')
     else:
         category = get_object_or_404(ProductCategory, pk=pk)
-        products = category.product_set.order_by('price')
+        products = category.product_set.filter(is_active=True).order_by('price')
         # альтернативный вариант
         # products = Product.objects.filter(category__pk=pk).order_by('price')
-
     context = {
         'title': 'продукты',
-        'links_menu': ProductCategory.objects.all(),
+        'links_menu': get_nemu(),
         'basket': get_basket(request),
         'category': category,
         'products': products,
@@ -69,7 +72,7 @@ def product(request, pk):
 
     context = {
         'title': 'продукты',
-        'links_menu': ProductCategory.objects.all(),
+        'links_menu': get_nemu,
         'basket': get_basket(request),
         'object': get_object_or_404(Product, pk=pk),
         'same_products': same_products,

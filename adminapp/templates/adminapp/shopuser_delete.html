@@ -8,7 +8,7 @@
     <div class="user_delete">
         Уверены, что хотите удалить <b> {{ user_to_delete.username }}
         {% if user_to_delete.first_name %}
-            ({{ user_to_delete.first_name|title }}</b>
+            ({{ user_to_delete.first_name|title }}
                 {% if user_to_delete.last_name %}
                     {{ user_to_delete.last_name|title }}
                 {% endif %})

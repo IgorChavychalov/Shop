@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00ed52f0-32d1-4a6e-9d26-6acdbead273a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/adminapp/templates/adminapp/productcategory_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminapp/templates/adminapp/product_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminapp/templates/adminapp/product_read.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminapp/templates/adminapp/product_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminapp/templates/adminapp/productcategory_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/adminapp/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminapp/templates/adminapp/product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/adminapp/templates/adminapp/product_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminapp/templates/adminapp/productcategory_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/adminapp/templates/adminapp/productcategory_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminapp/templates/adminapp/shopuser_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/adminapp/templates/adminapp/shopuser_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminapp/templates/adminapp/shopuser_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/adminapp/templates/adminapp/shopuser_update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/adminapp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/adminapp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,46 +32,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/adminapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="24" column="15" lean-forward="true" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+            <state relative-caret-position="298">
+              <caret line="160" selection-start-line="160" selection-end-line="160" />
               <folding>
                 <element signature="e#0#76#0" expanded="true" />
-                <element signature="e#366#667#0" />
-                <element signature="e#1034#1339#0" />
-                <element signature="e#1376#1789#0" />
-                <element signature="e#1835#2267#0" />
-                <element signature="e#2431#2851#0" />
+                <element signature="e#439#740#0" />
+                <element signature="e#816#1060#0" />
+                <element signature="e#1138#1443#0" />
+                <element signature="e#1480#1903#0" />
+                <element signature="e#1944#2467#0" />
+                <element signature="e#2508#2942#0" />
+                <element signature="e#2986#3414#0" />
+                <element signature="e#3462#4007#0" />
+                <element signature="e#4055#4497#0" />
+                <element signature="e#4542#5009#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/productcategory_update.html">
+        <entry file="file://$PROJECT_DIR$/mainapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="-54">
+              <caret line="72" column="15" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#76#0" expanded="true" />
+                <element signature="e#242#344#0" />
+                <element signature="e#374#417#0" />
+                <element signature="e#460#568#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/shopuser_update.html">
+        <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/product_update.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="418">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/shopuser_delete.html">
+        <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/productcategory_delete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="352">
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -73,43 +90,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/product_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+            <state relative-caret-position="423">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/product_read.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adminapp/forms.py">
+        <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/product_delete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="46" column="29" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#70#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="286">
+              <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adminapp/models.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mainapp/models.py">
+        <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/shopuser_update.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/productcategory_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -117,11 +126,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/adminapp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="85" lean-forward="true" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="85" />
+            <state relative-caret-position="352">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/productcategory_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -143,9 +161,9 @@
       <find>t_href</find>
       <find>new_basket_item</find>
       <find>buy</find>
-      <find>%}&gt;</find>
       <find>product_name</find>
       <find>btn</find>
+      <find>%}&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>src=&quot;/static/</replace>
@@ -154,6 +172,7 @@
       <replace>basket_item</replace>
       <replace>btn</replace>
       <replace>%}&quot;&gt;</replace>
+      <replace>=%}&quot;&gt;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>F:\Репозитории\shop\static\js</dir>
@@ -173,10 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/static/styles/style.css" />
-        <option value="$PROJECT_DIR$/mainapp/templates/urls.py" />
-        <option value="$PROJECT_DIR$/mainapp/templates/mainapp/management/commands/fill_db.py" />
-        <option value="$PROJECT_DIR$/mainapp/json/categories.json" />
         <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/authapp/models.py" />
         <option value="$PROJECT_DIR$/mainapp/management/commands/fill_db.py" />
@@ -206,10 +221,8 @@
         <option value="$PROJECT_DIR$/static/js/basket_scripts.js" />
         <option value="$PROJECT_DIR$/adminapp/templates/products.html" />
         <option value="$PROJECT_DIR$/adminapp/templates/adminapp/products_list.html" />
-        <option value="$PROJECT_DIR$/mainapp/views.py" />
         <option value="$PROJECT_DIR$/adminapp/templates/adminapp/includes/inc__menu.html" />
         <option value="$PROJECT_DIR$/mainapp/templates/mainapp/includes/inc__main_menu.html" />
-        <option value="$PROJECT_DIR$/adminapp/templates/adminapp/shopuser_update.html" />
         <option value="$PROJECT_DIR$/authapp/templates/authapp/update.html" />
         <option value="$PROJECT_DIR$/basketapp/templates/basketapp/includes/inc__basket_list.html" />
         <option value="$PROJECT_DIR$/mainapp/templates/mainapp/products_list.html" />
@@ -217,27 +230,32 @@
         <option value="$PROJECT_DIR$/mainapp/templates/mainapp/catalog.html" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/adminapp/templates/adminapp/index.html" />
-        <option value="$PROJECT_DIR$/adminapp/templates/adminapp/shopuser_delete.html" />
-        <option value="$PROJECT_DIR$/adminapp/forms.py" />
         <option value="$PROJECT_DIR$/mainapp/models.py" />
-        <option value="$PROJECT_DIR$/adminapp/templates/adminapp/product_list.html" />
-        <option value="$PROJECT_DIR$/adminapp/urls.py" />
+        <option value="$PROJECT_DIR$/adminapp/templates/adminapp/shopuser_update.html" />
+        <option value="$PROJECT_DIR$/adminapp/templates/adminapp/shopuser_delete.html" />
+        <option value="$PROJECT_DIR$/adminapp/templates/adminapp/productcategory_delete.html" />
         <option value="$PROJECT_DIR$/adminapp/templates/adminapp/productcategory_list.html" />
+        <option value="$PROJECT_DIR$/adminapp/forms.py" />
+        <option value="$PROJECT_DIR$/adminapp/templates/adminapp/product_update.html" />
+        <option value="$PROJECT_DIR$/adminapp/templates/adminapp/product_delete.html" />
+        <option value="$PROJECT_DIR$/mainapp/views.py" />
         <option value="$PROJECT_DIR$/adminapp/views.py" />
+        <option value="$PROJECT_DIR$/adminapp/urls.py" />
+        <option value="$PROJECT_DIR$/adminapp/templates/adminapp/product_list.html" />
+        <option value="$PROJECT_DIR$/adminapp/templates/adminapp/product_read.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="width" value="1091" />
-    <option name="height" value="1048" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="1096" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -376,18 +394,19 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/adminapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/adminapp/templates/adminapp" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Репозитории\shop\adminapp" />
       <recent name="F:\Репозитории\shop\adminapp\templates\adminapp" />
+      <recent name="F:\Репозитории\shop\adminapp" />
       <recent name="F:\Репозитории\shop\mainapp\templates\mainapp" />
       <recent name="F:\Репозитории\shop\basketapp\templates\basketapp\includes" />
       <recent name="F:\Репозитории\shop\basketapp" />
@@ -651,7 +670,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554977284624</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="ДЗ-7:&#10;    -админка: создана страница&#10;    -user: create, update, delete&#10;    -категории: update">
+      <created>1554982425562</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1554982425562</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -664,11 +690,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="988" height="949" extended-state="0" />
+    <frame x="-7" y="0" width="992" height="953" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="DB Browser" order="0" weight="0.15645514" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49757674" visible="true" weight="0.27310926" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49757674" weight="0.15899825" />
+      <window_info id="DB Browser" order="1" weight="0.167152" />
       <window_info id="Structure" order="2" sideWeight="0.5024233" side_tool="true" weight="0.11531741" />
       <window_info id="Favorites" order="3" sideWeight="0.5024233" side_tool="true" weight="0.11531741" />
       <window_info anchor="bottom" id="DB Execution Console" order="0" />
@@ -688,8 +714,8 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info id="DB Browser" order="0" weight="0.15645514" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49757674" visible="true" weight="0.28446388" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49757674" visible="true" weight="0.15899825" />
+      <window_info id="DB Browser" order="1" weight="0.167152" />
       <window_info id="Structure" order="2" sideWeight="0.5024233" side_tool="true" weight="0.11531741" />
       <window_info id="Favorites" order="3" sideWeight="0.5024233" side_tool="true" weight="0.11531741" />
       <window_info anchor="bottom" id="DB Execution Console" order="0" />
@@ -770,7 +796,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ДЗ-2:&#10;    -создан base шаблон&#10;    -static: index, catalog, contacts" />
     <MESSAGE value="ДЗ-2:&#10;    -создан base шаблон&#10;    -static: index, catalog, contacts&#10;    -url" />
     <MESSAGE value="ДЗ-2:&#10;    -создан base шаблон&#10;    -static: index, catalog, contacts&#10;    -url&#10;    -цикл, if" />
     <MESSAGE value="ДЗ-2:&#10;    -создан base шаблон&#10;    -static: index, catalog, contacts&#10;    -url&#10;    -цикл, if&#10;    -active для основного меню" />
@@ -795,49 +820,10 @@
     <MESSAGE value="ДЗ-6:&#10;    -корзина: сумма на панели&#10;    -hot_product&#10;    -корзина: удаление    &#10;    -страница продукта&#10;    -@безопастность&#10;    -ajax: изменения количества товаров" />
     <MESSAGE value="ДЗ-7:&#10;    -админка: создана страница" />
     <MESSAGE value="ДЗ-7:&#10;    -админка: создана страница&#10;    -админка: create, update, delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ-7:&#10;    -админка: создана страница&#10;    -админка: create, update, delete" />
+    <MESSAGE value="ДЗ-7:&#10;    -админка: создана страница&#10;    -user: create, update, delete&#10;    -категории: update" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ-7:&#10;    -админка: создана страница&#10;    -user: create, update, delete&#10;    -категории: update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/basketapp/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authapp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authapp/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basketapp/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authapp/templates/authapp/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/includes/inc__category_menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -877,9 +863,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/jquery-3.2.1.min.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -924,27 +907,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db.sqlite3">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://aed23708-c34b-4041-ab2b-983b7ff9771b/consoles/Connection">
-      <provider selected="true" editor-type-id="0.CONSOLE">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1046,16 +1012,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/authapp/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -1073,26 +1029,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/shopuser_delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/adminapp/models.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1104,44 +1042,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/product_list.html">
+    <entry file="file://$PROJECT_DIR$/static/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
+        <state relative-caret-position="-46445" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/productcategory_list.html">
+    <entry file="file://$PROJECT_DIR$/mainapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminapp/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="46" column="29" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminapp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="85" lean-forward="true" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="85" />
+        <state relative-caret-position="330">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/shopuser_update.html">
+    <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="484">
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1152,18 +1074,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminapp/views.py">
+    <entry file="file://$PROJECT_DIR$/adminapp/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="24" column="15" lean-forward="true" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+        <state relative-caret-position="1342">
+          <caret line="65" column="14" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/shopuser_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/productcategory_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://aed23708-c34b-4041-ab2b-983b7ff9771b/consoles/Connection">
+      <provider selected="true" editor-type-id="0.CONSOLE">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/shopuser_update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/product_update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/productcategory_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/product_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="72" column="15" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
           <folding>
             <element signature="e#0#76#0" expanded="true" />
-            <element signature="e#366#667#0" />
-            <element signature="e#1034#1339#0" />
-            <element signature="e#1376#1789#0" />
-            <element signature="e#1835#2267#0" />
-            <element signature="e#2431#2851#0" />
+            <element signature="e#242#344#0" />
+            <element signature="e#374#417#0" />
+            <element signature="e#460#568#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="160" selection-start-line="160" selection-end-line="160" />
+          <folding>
+            <element signature="e#0#76#0" expanded="true" />
+            <element signature="e#439#740#0" />
+            <element signature="e#816#1060#0" />
+            <element signature="e#1138#1443#0" />
+            <element signature="e#1480#1903#0" />
+            <element signature="e#1944#2467#0" />
+            <element signature="e#2508#2942#0" />
+            <element signature="e#2986#3414#0" />
+            <element signature="e#3462#4007#0" />
+            <element signature="e#4055#4497#0" />
+            <element signature="e#4542#5009#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/product_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/product_read.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
         </state>
       </provider>
     </entry>
