@@ -7,8 +7,9 @@
         Продукт <strong>{{ object.category.name|title }} / {{ object.name|title }}</strong>
     </div>
     <img src="/media/{{ object.image|default:'products_images/default.jpg' }}" width="200px" height="200px"
+         style="float: left"
          alt="{{ object.name }}">
-    <div class="summary">
+    <div class="summary" style="float: left">
         <b>цена</b>
         <p>{{ object.price }} руб</p>
         <b>количество</b>
@@ -16,17 +17,17 @@
         <b>в каталоге</b>
         <p>{% if object.is_active %}да{% else %}нет{% endif %}</p>
         <p>
-            <a class="btn-add" href="{% url 'myadmin:product_update' object.pk %}">
+            <a class="btn btn-add" href="{% url 'myadmin:product_update' object.pk %}">
             редактировать
             </a>
         </p>
         <p>
-            <a class="btn-add" href="{% url 'myadmin:product_delete' object.pk %}">
+            <a class="btn btn-add" href="{% url 'myadmin:product_delete' object.pk %}">
             удалить
             </a>
         </p>
         <p>
-            <a class="btn-add" href="{% url 'myadmin:products' object.category.pk %}">
+            <a class="btn btn-add" href="{% url 'myadmin:products' object.category.pk %}">
             назад
             </a>
         </p>
