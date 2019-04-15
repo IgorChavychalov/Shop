@@ -1,14 +1,15 @@
 {% extends 'adminapp/base.html' %}
 {% load static %}
+{% load my_tags %}
 
 {% block container %}
 <div class="users_list">
     <a class="new_user btn-add" href="{% url 'myadmin:shopuser_create' %}">
         новый пользователь
     </a>
-    {% for object in objects %}
+    {% for object in object_list %}
     <div class="user_record {% if not object.is_active %}not_active{% endif %}">
-        <img src="/media/{{ object.avatar|default:'users_avatars/default.jpg' }}"
+        <img src="{{ object.avatar|media_folder_users }}"
              alt="{{ object.username }}" width=100 height=100px>
         <div class="user_role">
             <strong>{% if object.is_superuser %}администратор{% else %}пользователь{% endif %}</strong>

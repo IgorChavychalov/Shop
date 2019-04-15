@@ -1,5 +1,6 @@
 {% extends 'mainapp/base.html' %}
 {% load static %}
+{% load my_tags %}
 
 {% block menu %}
     {% include 'mainapp/includes/inc__main_menu.html' %}
@@ -11,8 +12,8 @@
     <div class="novelty">
         <div class="big_img_product">
             <a href="#">
-                <img class="product_img" src="/media/{{ object.image }}"
-                                         alt="/media/{{ object.image }}">
+                <img class="product_img" src="{{ object.image|media_folder_products }}"
+                                         alt="{{ object.image|media_folder_products }}">
             </a>
         </div>
         <div class="text-block">
@@ -33,8 +34,8 @@
             <div class="product">
                 <a href="{% url 'main:product' item.pk %}">
                     <img class="catalog_img"
-                        src="/media/{{ item.image }}"
-                        alt="/media/{{ item.image }}">
+                        src="{{ item.image|media_folder_products }}"
+                        alt="{{ item.image|media_folder_products }}">
                 </a>
                 <div class="product_text">
                     {{ item.name }}

@@ -1,5 +1,6 @@
 {% extends 'mainapp/base.html' %}
 {% load static %}
+{% load my_tags %}
 
 {% block menu %}
     {% include 'mainapp/includes/inc__main_menu.html' %}
@@ -30,8 +31,8 @@
             <div class="product">
                 <a href="{% url 'main:product' product.pk %}">
                     <img class="catalog_img"
-                        src="/media/{{ product.image }}"
-                        alt="/media/{{ product.image }}">
+                        src="{{ product.image|media_folder_products }}"
+                        alt="{{ product.image|media_folder_products }}">
                 </a>
                 <div class="product_text">
                     {{ product.name }}
