@@ -1,8 +1,11 @@
-from django.shortcuts import render, HttpResponseRedirect, get_object_or_404
-from mainapp.models import ProductCategory, Product
-from django.urls import reverse
-from basketapp.models import Basket
 import random
+
+from django.shortcuts import render, HttpResponseRedirect, get_object_or_404
+from django.urls import reverse
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+
+from basketapp.models import Basket
+from mainapp.models import ProductCategory, Product
 
 
 def get_basket(request):
@@ -21,7 +24,7 @@ def get_same_products(hot_product):
     return hot_product.category.product_set.filter(is_active=True).exclude(pk=hot_product.pk)[:4]
 
 
-def get_nemu():
+def get_menu():
     return ProductCategory.objects.filter(is_active=True)
 
 
@@ -39,7 +42,7 @@ def catalog(request):
 
     context = {
         'title': 'каталог',
-        'links_menu': get_nemu(),
+        'links_menu': get_menu(),
         'basket': get_basket(request),
         'hot_product': hot_product,
         'same_products': same_products,
@@ -47,18 +50,30 @@ def catalog(request):
     return render(request, 'mainapp/catalog.html', context)
 
 
-def category(request, pk):
+def category(request, pk, page=1):
     if int(pk) == 0:
-        category = {'name': 'все'}
+        category = {
+            'pk': 0,
+            'name': 'все',
+        }
         products = Product.objects.filter(is_active=True, category__is_active=True).order_by('price')
     else:
         category = get_object_or_404(ProductCategory, pk=pk)
         products = category.product_set.filter(is_active=True).order_by('price')
         # альтернативный вариант
         # products = Product.objects.filter(category__pk=pk).order_by('price')
+        # ограничение выдаваемых продуктов
+    paginator = Paginator(products, 2)
+    try:
+        products = paginator.page(page)
+    except PageNotAnInteger:
+        products = paginator.page(1)
+    except EmptyPage:
+        products = paginator.page(paginator.num_pages)
+
     context = {
         'title': 'продукты',
-        'links_menu': get_nemu(),
+        'links_menu': get_menu(),
         'basket': get_basket(request),
         'category': category,
         'products': products,
@@ -72,7 +87,7 @@ def product(request, pk):
 
     context = {
         'title': 'продукты',
-        'links_menu': get_nemu,
+        'links_menu': get_menu,
         'basket': get_basket(request),
         'object': get_object_or_404(Product, pk=pk),
         'same_products': same_products,

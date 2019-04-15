@@ -25,10 +25,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="fd314714-108d-4ebc-999c-c9b1415e297a">
-        <schema name="main" object-types="index, view, table, column, dataset trigger, constraint" />
-      </connection>
-      <connection connection-id="7cf3b68d-3b3a-49bb-bb9e-274cb009ea8b">
-        <schema name="main" object-types="view, table" />
+        <schema name="main" object-types="table, view" />
       </connection>
     </loaded-nodes>
   </component>
@@ -166,7 +163,7 @@
           <description value="" />
           <database-type value="SQLITE" />
           <config-type value="BASIC" />
-          <database-version value="9999.0" />
+          <database-version value="3.23" />
           <driver-source value="BUILTIN" />
           <driver-library value="" />
           <driver value="" />

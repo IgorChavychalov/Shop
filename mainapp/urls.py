@@ -9,7 +9,7 @@ urlpatterns = [
     re_path(r'^contacts/$', mainapp.contacts, name='contacts'),
     # альтернативный вариант
     # path('<int:pk>/', mainapp.category, name='category'),
-    re_path(r'^category/(?P<pk>\d+)/$', mainapp.category, name='category'),
+    re_path(r'^category/(?P<pk>\d+)/(?P<page>\d+)/$', mainapp.category, name='category'),
     re_path(r'^catalog/$', mainapp.catalog, name='catalog'),
     re_path(r'^product/(?P<pk>\d+)/$', mainapp.product, name='product'),
 ]

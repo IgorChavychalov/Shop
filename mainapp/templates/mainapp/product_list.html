@@ -10,6 +10,21 @@
     {% include 'mainapp/includes/inc__category_menu.html' %}
     <h2>Категория: "{{ category.name|title }}"</h2>
 <!--    <h2>Категория: "{# products.0.category.name|title #}"</h2>-->
+    <div class="paginator">
+        {% if products.has_previous %}
+            <a class="page" href="{% url 'main:category' category.pk products.previous_page_number %}">
+                <
+            </a>
+        {% endif %}
+        <span class="current">
+            страница {{ products.number }} из {{ products.paginator.num_pages }}
+        </span>
+        {% if products.has_next %}
+            <a class="page" href="{% url 'main:category' category.pk products.next_page_number %}">
+                >
+            </a>
+        {% endif %}
+    </div>
     <div class="product_list">
         {% for product in products %}
             <div class="product">

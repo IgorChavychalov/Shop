@@ -94,7 +94,6 @@ body {
 
 .category_link:active {
     text-decoration: none;
-    
 }
 
 .product_list {
@@ -397,4 +396,14 @@ btn-add:active {
 
 .not_active {
     opacity: 0.3;
+}
+.paginator {
+    text-align: center;
+}
+.page {
+    list-style-type: none;
+    text-decoration: none;
+}
+.page:active {
+    text-decoration: none;
 }

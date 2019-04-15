@@ -2,14 +2,14 @@
     <ul class="category_list">
         <li>
             <a class="category_link {% if request.resolver_match.kwargs.pk == '0' %}active{% endif %}"
-               href="{% url 'main:category' 0 %}">
+               href="{% url 'main:category' 0 1 %}">
                 Все
             </a>
         </li>
         {% for element in links_menu %}
             <li>
                 <a class="category_link {% if request.resolver_match.kwargs.pk|add:0 == element.pk %}active{% endif %}"
-                   href="{% url 'main:category' element.pk %}">
+                   href="{% url 'main:category' element.pk 1 %}">
                     {{ element.name }}
                 </a>
             </li>
