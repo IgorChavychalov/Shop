@@ -1,5 +1,5 @@
 {% load my_tags %}
-{% for item in basket_items %}
+{% for item in basket %}
     <div class="basket_record">
         <img class="basket_img" src="{{ item.product.image|media_folder_products }}" width="140px" height="140px"
              alt="{{ item.product.short_desc }}">
@@ -14,10 +14,10 @@
     </div>
 {% endfor %}
 
-{% if basket_items %}
+{% if basket %}
     <h3 class="basket_summary">
-        В корзине {{ basket_items.0.total_quantity }} товаров общей стоимостью
-        {{ basket_items.0.total_cost }} руб
+        В корзине {{ basket.0.total_quantity }} товаров общей стоимостью
+        {{ basket.0.total_cost }} руб
 
         <a href="{% url 'main:index' %}" class="btn-add">
         на главную

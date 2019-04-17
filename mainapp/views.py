@@ -1,18 +1,16 @@
 import random
 
-from django.shortcuts import render, HttpResponseRedirect, get_object_or_404
-from django.urls import reverse
+from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
-from basketapp.models import Basket
 from mainapp.models import ProductCategory, Product
 
 
-def get_basket(request):
-    if request.user.is_authenticated:
-        return request.user.basket.all()
-    else:
-        return []
+# def get_basket(request):
+#     if request.user.is_authenticated:
+#         return request.user.basket.all()
+#     else:
+#         return []
 
 
 def get_hot_product():
@@ -31,7 +29,7 @@ def get_menu():
 def index(request):
     context = {
         'title': 'главная',
-        'basket': get_basket(request),
+        # 'basket': get_basket(request),
     }
     return render(request, 'mainapp/index.html', context)
 
@@ -43,7 +41,7 @@ def catalog(request):
     context = {
         'title': 'каталог',
         'links_menu': get_menu(),
-        'basket': get_basket(request),
+        # 'basket': get_basket(request),
         'hot_product': hot_product,
         'same_products': same_products,
     }
@@ -74,7 +72,7 @@ def category(request, pk, page=1):
     context = {
         'title': 'продукты',
         'links_menu': get_menu(),
-        'basket': get_basket(request),
+        # 'basket': get_basket(request),
         'category': category,
         'products': products,
     }
@@ -88,7 +86,7 @@ def product(request, pk):
     context = {
         'title': 'продукты',
         'links_menu': get_menu,
-        'basket': get_basket(request),
+        # 'basket': get_basket(request),
         'object': get_object_or_404(Product, pk=pk),
         'same_products': same_products,
     }
@@ -113,6 +111,6 @@ def contacts(request):
     context = {
         'page_title': 'контакты',
         'locations': locations,
-        'basket': get_basket(request),
+        # 'basket': get_basket(request),
     }
     return render(request, 'mainapp/contacts.html', context)

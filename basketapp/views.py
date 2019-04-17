@@ -10,13 +10,14 @@ from django.http import JsonResponse
 
 @login_required
 def index(request):
-    basket_items = request.user.basket.order_by('product__category')
+    # basket_items = request.user.basket.order_by('product__category')
 
-    content = {
-        'title': 'корзина',
-        'basket_items': basket_items,
-    }
-    return render(request, 'basketapp/index.html', content)
+    # content = {
+    #     'title': 'корзина',
+    #     'basket_items': basket_items,
+    # }
+    # return render(request, 'basketapp/index.html', content)
+    return render(request, 'basketapp/index.html')
 
 
 @login_required
@@ -59,10 +60,12 @@ def update(request, pk, quantity):
         else:
             basket_item.delete()
 
+        # context = {
+        #     'basket_items': request.user.basket.all().order_by('product__category'),
+        # }
         context = {
-            'basket_items': request.user.basket.all().order_by('product__category'),
+            'basket': request.user.basket.all().order_by('product__category'),
         }
-
         result = render_to_string('basketapp/includes/inc__basket_list.html', context)
 
         return JsonResponse({
