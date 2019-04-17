@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00ed52f0-32d1-4a6e-9d26-6acdbead273a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mainapp.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authapp/templates/authapp/verification.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/authapp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/authapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/authapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/authapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,49 +26,91 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basketapp/templates/basketapp/includes/inc__main_menu.html">
+        <entry file="file://$PROJECT_DIR$/mainapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/authapp/templates/authapp/login.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/authapp/templates/authapp/register.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/authapp/templates/authapp/update.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/authapp/templates/authapp/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+            <state relative-caret-position="690">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mainapp/templatetags/my_tags.py">
+        <entry file="file://$PROJECT_DIR$/shop/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="575">
+              <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basketapp/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
               <folding>
-                <element signature="e#0#27#0" expanded="true" />
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/authapp/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-306">
+              <caret line="44" column="57" lean-forward="true" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#57#0" expanded="true" />
+                <element signature="e#232#1087#0" />
+                <element signature="e#1642#2074#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/authapp/templates/authapp/verification.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/authapp/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/authapp/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#2#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/authapp/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,8 +121,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -93,6 +137,7 @@
       <find>btn</find>
       <find>%}&gt;</find>
       <find>get_nemu</find>
+      <find>activation_key_expired</find>
     </findStrings>
     <replaceStrings>
       <replace>src=&quot;/static/</replace>
@@ -122,10 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/authapp/templates/authapp/register.html" />
-        <option value="$PROJECT_DIR$/authapp/urls.py" />
-        <option value="$PROJECT_DIR$/authapp/forms.py" />
-        <option value="$PROJECT_DIR$/mainapp/json/products.json" />
         <option value="$PROJECT_DIR$/basketapp/models.py" />
         <option value="$PROJECT_DIR$/basketapp/templates/basketapp/index.html" />
         <option value="$PROJECT_DIR$/basketapp/templates/basketapp/includes/inc__main_menu.html" />
@@ -133,7 +174,6 @@
         <option value="$PROJECT_DIR$/mainapp/templates/mainapp/contacts.html" />
         <option value="$PROJECT_DIR$/mainapp/templates/mainapp/base.html" />
         <option value="$PROJECT_DIR$/authapp/templates/authapp/login.html" />
-        <option value="$PROJECT_DIR$/authapp/views.py" />
         <option value="$PROJECT_DIR$/basketapp/urls.py" />
         <option value="$PROJECT_DIR$/shop/urls.py" />
         <option value="$PROJECT_DIR$/adminapp/templates/adminapp/includes/_inc__menu.html" />
@@ -163,7 +203,6 @@
         <option value="$PROJECT_DIR$/adminapp/urls.py" />
         <option value="$PROJECT_DIR$/adminapp/views.py" />
         <option value="$PROJECT_DIR$/mainapp/templates/mainapp/catalog.html" />
-        <option value="$PROJECT_DIR$/shop/settings.py" />
         <option value="$PROJECT_DIR$/adminapp/templates/adminapp/product_list.html" />
         <option value="$PROJECT_DIR$/adminapp/templates/mainapp/product_detail.html" />
         <option value="$PROJECT_DIR$/adminapp/templates/mainapp/productcategory_confirm_delete.html" />
@@ -173,12 +212,19 @@
         <option value="$PROJECT_DIR$/mainapp/templates/mainapp/product_list.html" />
         <option value="$PROJECT_DIR$/adminapp/templates/authapp/shopuser_list.html" />
         <option value="$PROJECT_DIR$/mainapp/templatetags/my_tags.py" />
+        <option value="$PROJECT_DIR$/authapp/forms.py" />
+        <option value="$PROJECT_DIR$/authapp/urls.py" />
+        <option value="$PROJECT_DIR$/authapp/models.py" />
+        <option value="$PROJECT_DIR$/authapp/views.py" />
+        <option value="$PROJECT_DIR$/authapp/templates/authapp/verification.html" />
+        <option value="$PROJECT_DIR$/shop/settings.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="981" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="67" />
+    <option name="y" value="27" />
+    <option name="width" value="971" />
     <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
@@ -274,33 +320,6 @@
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="mainapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="mainapp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="mainapp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="mainapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="mainapp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="mainapp" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="mainapp" type="462c0819:PsiDirectoryNode" />
-              <item name="templatetags" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
@@ -640,7 +659,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555488492626</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="ДЗ-2.1:&#10;    -bash: run, migrate, alias&#10;    -dumbs">
+      <created>1555489587295</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1555489587295</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView">
@@ -653,9 +679,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="67" y="27" width="971" height="1048" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49757674" visible="true" weight="0.1568306" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49757674" visible="true" weight="0.21202531" />
       <window_info id="DB Browser" order="1" weight="0.1664" />
       <window_info id="Structure" order="2" sideWeight="0.5024233" side_tool="true" weight="0.11531741" />
       <window_info id="Favorites" order="3" sideWeight="0.5024233" side_tool="true" weight="0.11531741" />
@@ -758,7 +785,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ДЗ-3:&#10;    -добавленны таблицы: категории, продукт&#10;    -медия" />
     <MESSAGE value="ДЗ-3:&#10;    -добавленны таблицы: категории, продукт&#10;    -медия&#10;    -CSS: выравнивание товаров" />
     <MESSAGE value="ДЗ-3:&#10;    -добавленны таблицы: категории, продукт&#10;    -медия&#10;    -CSS: выравнивание товаров&#10;    -скриншоты" />
     <MESSAGE value="ДЗ-4:&#10;    -пространство имён&#10;    -категории&#10;    -json&#10;    -база включена в гит" />
@@ -783,35 +809,10 @@
     <MESSAGE value="ДЗ-8:&#10;    -админка: создана страница&#10;    -user: create, update, delete&#10;    -категории: create, update, delete&#10;    -товары: create, update, delete, read&#10;    -коррекция шаблонов" />
     <MESSAGE value="ДЗ-8:&#10;    -админка: создана страница&#10;    -user: create, update, delete&#10;    -категории: create, update, delete&#10;    -товары: create, update, delete, read&#10;    -коррекция шаблонов&#10;    -pagination" />
     <MESSAGE value="ДЗ-2.1:&#10;    -bash: run, migrate, alias" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ-2.1:&#10;    -bash: run, migrate, alias" />
+    <MESSAGE value="ДЗ-2.1:&#10;    -bash: run, migrate, alias&#10;    -dumbs" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ-2.1:&#10;    -bash: run, migrate, alias&#10;    -dumbs" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46445" />
-      </provider>
-    </entry>
-    <entry file="db://aed23708-c34b-4041-ab2b-983b7ff9771b/consoles/Connection" />
-    <entry file="file://$PROJECT_DIR$/static/js/basket_scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminapp/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8822">
-          <caret line="401" column="1" selection-start-line="401" selection-start-column="1" selection-end-line="401" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminapp/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/adminapp/admin.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -834,16 +835,6 @@
           <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -900,13 +891,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/adminapp/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="128" column="13" lean-forward="true" selection-start-line="128" selection-start-column="13" selection-end-line="128" selection-end-column="13" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/base.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1126,6 +1110,81 @@
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basketapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authapp/templates/authapp/verification.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authapp/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#2#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="44" column="57" lean-forward="true" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#232#1087#0" />
+            <element signature="e#1642#2074#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
         </state>
       </provider>
     </entry>
