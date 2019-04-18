@@ -1,0 +1,14 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: 
+ =?utf-8?b?0J/QvtC00YLQstC10YDQttC00LXQvdC40LUg0YPRh9C10YLQvdC+0Lkg0LfQsNC/?=
+ =?utf-8?b?0LjRgdC4IHVzZXI2?=
+From: django@geekshop.local
+To: user6@mail.ru
+Date: Thu, 18 Apr 2019 08:15:09 -0000
+Message-ID: <155557530902.27338.5972711135169600275@protor-fenix>
+
+Для подтверждения учетной записи user6 на портале http://localhost:8000 перейдите по ссылке: 
+http://localhost:8000/auth/verify/user6@mail.ru/1254c48eecfd2e1a12605bc69ec3ff8822f1cd16/
+-------------------------------------------------------------------------------

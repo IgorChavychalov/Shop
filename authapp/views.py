@@ -57,7 +57,8 @@ def register(request):
             user = form.save()
             if send_verify_mail(user):
                 # print('сообщение подтверждения отправлено')
-                return HttpResponseRedirect(reverse('auth:login'))
+                return HttpResponseRedirect(reverse('auth:confirm'))
+                # return HttpResponseRedirect(reverse('auth:login'))
             else:
                 # print('ошибка отправки сообщения')
                 return HttpResponseRedirect(reverse('main:index'))
@@ -69,6 +70,12 @@ def register(request):
         'form': form,
     }
     return render(request, 'authapp/register.html', context)
+
+
+def confirm(request):
+    context = {'title': 'уведомление',
+               }
+    return render(request, 'authapp/confirm.html', context)
 
 
 def update(request):

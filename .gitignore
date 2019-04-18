@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+!/tmp/
+!/tmp/email-messages/20190418-082845-139672974698424.log
+!/tmp/email-messages/20190417-110130-140067474146976.log
+!/tmp/email-messages/20190418-082005-139672975459832.log
+!/tmp/email-messages/20190418-081509-140181787650144.log
+!/tmp/email-messages/

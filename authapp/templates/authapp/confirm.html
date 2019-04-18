@@ -1,0 +1,14 @@
+{% extends 'authapp/base.html' %}
+{% load static %}
+
+{% block container %}
+    <h3>Спасибо за регистрацию.</h3>
+    <br>
+    <h4>На ваш адрес отправлено письмо с дальнейшими инструкциями</h4>
+    <br>
+    <h4>Посетите ваш электронный адрес для завершения регистрации</h4>
+    <br>
+    <a class="btn btn-round form-control" href="{% url 'authapp:login' %}">
+        ВХОД
+    </a>
+{% endblock %}
