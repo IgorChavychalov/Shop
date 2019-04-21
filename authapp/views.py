@@ -79,6 +79,7 @@ def confirm(request):
     return render(request, 'authapp/confirm.html', context)
 
 
+@transaction.atomic
 def update(request):
     if request.method == 'POST':
         form = ShopUserEditForm(request.POST, request.FILES, instance=request.user)
