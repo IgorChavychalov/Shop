@@ -11,7 +11,11 @@
 
 
 
+индификатор клиента:
+962643621727-paq4csk435cjj5dd1r5o45g7bsn79uv7.apps.googleusercontent.com
 
+секрет клиента:
+P2Ttzm76UCKd9yJgjcBSmhXq
 
 
 

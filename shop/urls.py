@@ -32,6 +32,8 @@ urlpatterns = [
     # re_path(r'^contacts/$', mainapp.contacts, name='contacts'),
     # re_path(r'^catalog/$', mainapp.catalog, name='catalog'),
 
+    re_path(r'^auth/verify/google/oauth2/', include("social_django.urls", namespace="social")),
+
     path('admin/', admin.site.urls),
 ]
 
