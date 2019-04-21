@@ -15,4 +15,8 @@
     <a href="{% url 'auth:register' %}" class="btn btn-round form-control">
         зарегистрироваться
     </a>
+    <a class="btn btn-round form-control" href="{% url 'social:begin' 'google-oauth2' %}?next=/">
+        Google sign in
+    </a>
+
 {% endblock %}
