@@ -1,48 +1,63 @@
 <div class="menu">
     <ul class="main_list">
-            <li>
-                <a class="main_link {% if request.resolver_match.url_name == 'index'%}active{% endif %}"
-                   href="{% url 'main:index' %}"> Главная
+        <li>
+            <a class="main_link {% if request.resolver_match.url_name == 'index'%}active{% endif %}"
+               href="{% url 'main:index' %}"> Главная
+            </a>
+        </li>
+        <li>
+            <a class="main_link {% if request.resolver_match.url_name == 'catalog' or request.resolver_match.url_name == 'category'%}active{% endif %}"
+               href="{% url 'main:catalog' %}"> Каталог
+            </a>
+        </li>
+        <li>
+            <a class="main_link {% if request.resolver_match.url_name == 'contacts'%}active{% endif %}"
+               href="{% url 'main:contacts' %}"> Контакты
+            </a>
+        </li>
+        {% if user.is_authenticated %}
+        <li>
+            <div class="dropdown">
+                <a class="dropdown-toggle main_link" href="" data-toggle="dropdown">
+                    {{ user.first_name|default:'Пользователь' }}
+                    <span class="caret"></span>
                 </a>
-            </li>
-            <li>
-                <a class="main_link {% if request.resolver_match.url_name == 'catalog' or request.resolver_match.url_name == 'category'%}active{% endif %}"
-                   href="{% url 'main:catalog' %}"> Каталог
-                </a>
-            </li>
-            <li>
-                <a class="main_link {% if request.resolver_match.url_name == 'contacts'%}active{% endif %}"
-                   href="{% url 'main:contacts' %}"> Контакты
-                </a>
-            </li>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="main_link" href="{% url 'auth:update' %}">
+                            профиль
+                        </a>
+                    </li>
+                    <li>
+                        <a class="main_link" href="{#% url 'ordersapp:orders_list' %#}">
+                            заказы
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        {% endif %}
+        {% if user.is_superuser %}
+        <li>
+           <a class="main_link" href="{% url 'myadmin:index' %}">админка</a>
+        </li>
+        {% endif %}
+        <li>
             {% if user.is_authenticated %}
-                <li>
-                    <a class="main_link" href=" {% url 'auth:update' %}">
-                        {{ user.first_name|default:'Пользователь' }}
-                    </a>
-                </li>
+                <a class="main_link" href="{% url 'auth:logout' %}"> Выйти </a>
+            {% else %}
+                <a class="main_link" href="{% url 'auth:login' %}"> Войти </a>
             {% endif %}
-            {% if user.is_superuser %}
-                <li>
-                    <a class="main_link" href="{% url 'myadmin:index' %}">админка</a>
-                </li>
-            {% endif %}
-            <li>
-                {% if user.is_authenticated %}
-                    <a class="main_link" href="{% url 'auth:logout' %}"> Выйти </a>
-                {% else %}
-                    <a class="main_link" href="{% url 'auth:login' %}"> Войти </a>
-                {% endif %}
-            </li>
-            <li>
-                <a href="{% url 'basket:index' %}" class="main_link basket"><img src="/static/img/basket.png" width="20" height="20"
-                                                         alt="/static/img/basket.png">
-                    {% if basket %}
-                        {{ basket.0.total_cost|floatformat:0 }} руб
-                        ({{ basket.0.total_quantity }} шт)
-                    {% endif %}
-                </a>
-            </li>
+        </li>
     </ul>
+    <li>
+        <a href="{% url 'basket:index' %}" class="main_link basket">
+            <img src="/static/img/basket.png" width="20" height="20" alt="/static/img/basket.png">
+            {% if basket %}
+                {{ basket.0.total_cost|floatformat:0 }} руб
+                ({{ basket.0.total_quantity }} шт)
+            {% endif %}
+        </a>
+    </li>
     <!--  Просмотр содержимого request {# request.resolver_match.url_name #}   -->
 </div>

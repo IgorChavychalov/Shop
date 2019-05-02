@@ -58,13 +58,21 @@ body {
 
 .main_link:hover {
     color: greenyellow;
-}
-
-.main_link: active {
-    color: red;
     text-decoration: none;
 }
 
+.main_link:active {
+    color: red;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+.main_link:focus {
+    color: red;
+    text-decoration: none;
+    list-style-type: none;
+
+}
 .main_link: visited {
     color: red;
     text-decoration: none;
