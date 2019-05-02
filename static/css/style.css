@@ -178,28 +178,6 @@ body {
     border-radius: 10px 10px 10px 10px;  
     float: left;
 }
-/*
-.btn {
-    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
-    border-radius: 23px;
-    background-color: #ffffff;
-    padding: 10px 20px;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 700;
-    color: black;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.btn:hover {
-    background-color: #f7f7f7;
-}
-btn:active {
-    box-shadow: 0 0px 5px 1px rgba(33, 33, 33, 0.35);
-    position: relative;
-    top: 2px;
-}
-*/
 .product_img:hover {
     outline: 10px solid #f8f8f8;
 }

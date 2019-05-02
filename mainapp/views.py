@@ -80,14 +80,14 @@ def category(request, pk, page=1):
 
 
 def product(request, pk):
-    hot_product = get_hot_product()
-    same_products = get_same_products(hot_product)
+    object = get_object_or_404(Product, pk=pk)
+    same_products = get_same_products(object)
 
     context = {
         'title': 'продукты',
         'links_menu': get_menu,
         # 'basket': get_basket(request),
-        'object': get_object_or_404(Product, pk=pk),
+        'object': object,
         'same_products': same_products,
     }
     return render(request, 'mainapp/product.html', context)
