@@ -2,39 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00ed52f0-32d1-4a6e-9d26-6acdbead273a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ordersapp/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordersapp/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordersapp/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordersapp/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordersapp/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordersapp/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordersapp/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordersapp/templates/ordersapp/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc__order_summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc_order_actions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordersapp/templates/ordersapp/order_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordersapp/templates/ordersapp/order_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordersapp/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordersapp/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordersapp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminapp/templates/adminapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/adminapp/templates/adminapp/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authapp/templates/authapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/authapp/templates/authapp/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basketapp/templates/basketapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/basketapp/templates/basketapp/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basketapp/templates/basketapp/includes/inc__main_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/basketapp/templates/basketapp/includes/inc__main_menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basketapp/templates/basketapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/basketapp/templates/basketapp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainapp/templates/mainapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainapp/templates/mainapp/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainapp/templates/mainapp/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainapp/templates/mainapp/includes/inc__main_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/includes/inc__main_menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainapp/templates/mainapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainapp/templates/mainapp/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainapp/templates/mainapp/product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/product_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc__order_summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc__order_summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc_order_actions.html" beforeDir="false" afterPath="$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc__order_actions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordersapp/templates/ordersapp/order_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/ordersapp/templates/ordersapp/order_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordersapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ordersapp/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,18 +25,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1641">
+            <state relative-caret-position="4158">
               <caret line="189" column="11" selection-start-line="189" selection-start-column="11" selection-end-line="189" selection-end-column="11" />
             </state>
           </provider>
@@ -72,7 +36,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
+            <state relative-caret-position="132">
               <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="12" />
             </state>
           </provider>
@@ -90,32 +54,45 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ordersapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="439">
+              <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#33#0" expanded="true" />
+                <element signature="e#593#1520#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/order_form.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ordersapp/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+            <state relative-caret-position="418">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc_order_actions.html">
+        <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/order_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="453">
+              <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc__order_actions.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -123,20 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc__order_summary.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
-              <folding>
-                <element signature="e#305#314#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="132">
+              <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -144,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/order_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
+            <state relative-caret-position="211">
               <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
             </state>
           </provider>
@@ -201,7 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mainapp/templates/mainapp/includes/inc__category_menu.html" />
         <option value="$PROJECT_DIR$/mainapp/urls.py" />
         <option value="$PROJECT_DIR$/adminapp/templates/adminapp/index.html" />
         <option value="$PROJECT_DIR$/adminapp/urls.py" />
@@ -247,18 +211,19 @@
         <option value="$PROJECT_DIR$/ordersapp/templates/ordersapp/base.html" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/ordersapp/templates/ordersapp/order_list.html" />
-        <option value="$PROJECT_DIR$/ordersapp/views.py" />
         <option value="$PROJECT_DIR$/ordersapp/urls.py" />
-        <option value="$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc__order_summary.html" />
         <option value="$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc_order_actions.html" />
+        <option value="$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc__order_summary.html" />
         <option value="$PROJECT_DIR$/ordersapp/templates/ordersapp/order_form.html" />
+        <option value="$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc__order_actions.html" />
+        <option value="$PROJECT_DIR$/ordersapp/views.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="1" />
-    <option name="width" value="909" />
+    <option name="width" value="859" />
     <option name="height" value="920" />
   </component>
   <component name="ProjectView">
@@ -266,7 +231,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -377,6 +341,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -753,7 +718,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556820234375</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="ДЗ-2.3:&#10;    -Droplist&#10;    -Orders: create">
+      <created>1556826778362</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1556826778362</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView">
@@ -766,10 +738,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-9" y="1" width="859" height="920" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49676025" visible="true" weight="0.1685678" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49676025" weight="0.29719853" />
       <window_info id="DB Browser" order="1" weight="0.1664" />
       <window_info id="Structure" order="2" sideWeight="0.50323975" side_tool="true" weight="0.109836064" />
       <window_info id="Favorites" order="3" sideWeight="0.5024233" side_tool="true" weight="0.11531741" />
@@ -790,7 +762,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49676025" visible="true" weight="0.3053961" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49676025" visible="true" weight="0.29719853" />
       <window_info id="DB Browser" order="1" weight="0.1664" />
       <window_info id="Structure" order="2" sideWeight="0.50323975" side_tool="true" weight="0.109836064" />
       <window_info id="Favorites" order="3" sideWeight="0.5024233" side_tool="true" weight="0.11531741" />
@@ -883,7 +855,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ДЗ-5:&#10;    -register/update&#10;    -категории&#10;    -добавлены товары&#10;    -basket" />
     <MESSAGE value="ДЗ-5:&#10;    -register/update&#10;    -категории&#10;    -добавлены товары&#10;    -basket&#10;    -чиним категории" />
     <MESSAGE value="ДЗ-5:&#10;    -register/update&#10;    -категории&#10;    -добавлены товары&#10;    -basket&#10;    -чиним категории&#10;    -скриншоты" />
     <MESSAGE value="ДЗ-5:&#10;    -register/update&#10;    -категории&#10;    -добавлены товары&#10;    -basket&#10;    -чиним категории&#10;    -скриншоты&#10;    -дамп базы" />
@@ -908,7 +879,8 @@
     <MESSAGE value="ДЗ-2.2:&#10;    -OAuth2: настройки&#10;    -google: sign in&#10;    -one to one" />
     <MESSAGE value="ДЗ-2.2:&#10;    -OAuth2: настройки&#10;    -google: sign in&#10;    -one to one&#10;    -доп поля и редактирование user" />
     <MESSAGE value="ДЗ-2.3:&#10;    -Droplist" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ-2.3:&#10;    -Droplist" />
+    <MESSAGE value="ДЗ-2.3:&#10;    -Droplist&#10;    -Orders: create" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ-2.3:&#10;    -Droplist&#10;    -Orders: create" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/authapp/forms.py">
@@ -1113,13 +1085,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/index.html" />
     <entry file="file://$PROJECT_DIR$/mainapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1307">
@@ -1164,16 +1130,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ordersapp/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/includes/inc__main_menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -1188,20 +1144,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1641">
-          <caret line="189" column="11" selection-start-line="189" selection-start-column="11" selection-end-line="189" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1209,12 +1151,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4158">
+          <caret line="189" column="11" selection-start-line="189" selection-start-column="11" selection-end-line="189" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/shop/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
+        <state relative-caret-position="968">
           <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
           <folding>
             <element signature="e#305#314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordersapp/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1229,41 +1195,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ordersapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc__order_summary.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc_order_actions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/order_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
+        <state relative-caret-position="211">
           <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/order_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+        <state relative-caret-position="453">
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc__order_summary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc__order_actions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordersapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+            <element signature="e#593#1520#0" />
+          </folding>
         </state>
       </provider>
     </entry>
