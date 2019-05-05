@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00ed52f0-32d1-4a6e-9d26-6acdbead273a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/js/orders_scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordersapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ordersapp/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordersapp/templates/ordersapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/ordersapp/templates/ordersapp/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordersapp/templates/ordersapp/order_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/ordersapp/templates/ordersapp/order_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordersapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ordersapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/orders_scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/orders_scripts.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/js/orders_scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+            <state relative-caret-position="132">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -768,7 +764,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557079234151</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="ДЗ-2.4:&#10;    -удаление возвращение продуктов в базу&#10;    -через сигналы&#10;    -quantity_arr, var price_arr">
+      <created>1557083470355</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1557083470356</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TodoView">
@@ -898,7 +901,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ДЗ-6:&#10;    -корзина: сумма на панели&#10;    -hot_product" />
     <MESSAGE value="ДЗ-6:&#10;    -корзина: сумма на панели&#10;    -hot_product&#10;    -корзина: удаление    &#10;    -страница продукта" />
     <MESSAGE value="ДЗ-6:&#10;    -корзина: сумма на панели&#10;    -hot_product&#10;    -корзина: удаление    &#10;    -страница продукта&#10;    -безопастность" />
     <MESSAGE value="ДЗ-6:&#10;    -корзина: сумма на панели&#10;    -hot_product&#10;    -корзина: удаление    &#10;    -страница продукта&#10;    -@безопастность&#10;    -ajax: изменения количества товаров" />
@@ -923,7 +925,8 @@
     <MESSAGE value="ДЗ-2.3:&#10;    -Droplist&#10;    -Orders: create, save, read, delete, complite" />
     <MESSAGE value="ДЗ-2.4:&#10;    -удаление возвращение продуктов в базу" />
     <MESSAGE value="ДЗ-2.4:&#10;    -удаление возвращение продуктов в базу&#10;    -через сигналы" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ-2.4:&#10;    -удаление возвращение продуктов в базу&#10;    -через сигналы" />
+    <MESSAGE value="ДЗ-2.4:&#10;    -удаление возвращение продуктов в базу&#10;    -через сигналы&#10;    -quantity_arr, var price_arr" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ-2.4:&#10;    -удаление возвращение продуктов в базу&#10;    -через сигналы&#10;    -quantity_arr, var price_arr" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/authapp/templates/authapp/confirm.html">
@@ -1263,8 +1266,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/orders_scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        <state relative-caret-position="132">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
