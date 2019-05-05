@@ -11,7 +11,7 @@ from django.http import JsonResponse
 @login_required
 def index(request):
     # basket_items = request.user.basket.order_by('product__category')
-
+    #
     # content = {
     #     'title': 'корзина',
     #     'basket_items': basket_items,
@@ -36,6 +36,8 @@ def add(request, pk):
         basket = Basket(user=request.user, product=product)
 
     basket.quantity += 1
+    # basket.product.quantity -= 1
+    # basket.product.save()
     basket.save()
 
     return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
@@ -55,14 +57,14 @@ def update(request, pk, quantity):
         basket_item = get_object_or_404(Basket, pk=int(pk))
 
         if quantity > 0:
+
+            # basket_item.product.quantity -= quantity - basket_item.quantity
+            # basket_item.product.save()
+
             basket_item.quantity = quantity
             basket_item.save()
         else:
             basket_item.delete()
-
-        # context = {
-        #     'basket_items': request.user.basket.all().order_by('product__category'),
-        # }
         context = {
             'basket': request.user.basket.all().order_by('product__category'),
         }

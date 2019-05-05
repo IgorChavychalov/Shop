@@ -4,6 +4,15 @@ from django.conf import settings
 from mainapp.models import Product
 
 
+# class OrderQuerySet(models.QuerySet):
+#    def delete(self, *args, **kwargs):
+#        print('model manager delete')
+#        for obj in self.orderitems.all():
+#            obj.product.quantity += obj.quantity
+#            obj.product.save()
+#        super().delete(*args, **kwargs)
+
+
 class Order(models.Model):
     FORMING = 'FM'
     SENT_TO_PROCEED = 'STP'
@@ -48,10 +57,6 @@ class Order(models.Model):
         return sum(list(map(lambda x: x.quantity * x.product.price, self.orderitems.select_related())))
 
     def delete(self):
-        # for item in self.orderitems.select_related():
-        #     item.product.quantity += item.quantity
-        #     item.product.save()
-
         self.is_active = False
         self.save()
 
@@ -63,3 +68,8 @@ class OrderItem(models.Model):
 
     def get_product_cost(self):
         return self.product.price * self.quantity
+
+    # def delete(self):
+    #     self.product.quantity += self.quantity
+    #     self.product.save()
+    #     super().delete()
