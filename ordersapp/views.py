@@ -1,7 +1,7 @@
 from django.db import transaction
-from django.shortcuts import render
-from django.urls import reverse_lazy
-from django.views.generic import ListView, CreateView, UpdateView, DeleteView
+from django.shortcuts import get_object_or_404, HttpResponseRedirect
+from django.urls import reverse_lazy, reverse
+from django.views.generic import ListView, CreateView, UpdateView, DeleteView, DetailView
 from django.forms import inlineformset_factory
 
 from ordersapp.models import Order, OrderItem
@@ -58,3 +58,56 @@ class OrderCreate(CreateView):
 
         return super().form_valid(form)
 
+
+class OrderUpdate(UpdateView):
+    model = Order
+    fields = []
+    success_url = reverse_lazy('order:orders_list')
+
+    def get_context_data(self, **kwargs):
+        data = super().get_context_data(**kwargs)
+
+        OrderFormSet = inlineformset_factory(Order, OrderItem, form=OrderItemForm, extra=1)
+        if self.request.POST:
+            data['orderitems'] = OrderFormSet(self.request.POST, self.request.FILES, instance=self.object)
+        else:
+            data['orderitems'] = OrderFormSet(instance=self.object)
+
+        return data
+
+    def form_valid(self, form):
+        context = self.get_context_data()
+        orderitems = context['orderitems']
+
+        with transaction.atomic():
+            self.object = form.save()
+            if orderitems.is_valid():
+                orderitems.instance = self.object
+                orderitems.save()
+        # удаляем пустой заказ
+        if self.object.get_total_cost() == 0:
+            self.object.delete()
+
+        return super().form_valid(form)
+
+
+class OrderDelete(DeleteView):
+    model = Order
+    success_url = reverse_lazy('order:orders_list')
+
+
+class OrderRead(DetailView):
+    model = Order
+
+    def get_context_data(self, **kwargs):
+        context = super(OrderRead, self).get_context_data(**kwargs)
+        context['title'] = 'заказ/просмотр'
+        return context
+
+
+def order_forming_complete(request, pk):
+    order = get_object_or_404(Order, pk=pk)
+    order.status = Order.SENT_TO_PROCEED
+    order.save()
+
+    return HttpResponseRedirect(reverse('order:orders_list'))

@@ -14,7 +14,7 @@ from mainapp.models import ProductCategory, Product
 
 
 def get_hot_product():
-    return random.choice(Product.objects.filter(is_active=True))
+    return random.choice(Product.objects.filter(is_active=True, category__is_active=True))
 
 
 def get_same_products(hot_product):
