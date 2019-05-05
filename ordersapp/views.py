@@ -1,12 +1,14 @@
 from django.db import transaction
+from django.db.models.signals import pre_save, pre_delete
+from django.forms import inlineformset_factory
 from django.shortcuts import get_object_or_404, HttpResponseRedirect
+from django.dispatch import receiver
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView, DetailView
-from django.forms import inlineformset_factory
 
 from ordersapp.models import Order, OrderItem
 from ordersapp.forms import OrderItemForm
-
+from basketapp.models import Basket
 
 class OrderList(ListView):
     model = Order
@@ -112,3 +114,23 @@ def order_forming_complete(request, pk):
     order.save()
 
     return HttpResponseRedirect(reverse('order:orders_list'))
+
+
+@receiver(pre_save, sender=OrderItem)
+@receiver(pre_save, sender=Basket)
+def product_quantity_update_save(sender, update_fields, instance, **kwargs):
+    print(f'pre_save -> {sender}')
+    if update_fields is 'quantity' or 'product':
+        if instance.pk:
+            instance.product.quantity -= instance.quantity - sender.get_item(instance.pk).quantity
+        else:
+            instance.product.quantity -= instance.quantity
+        instance.product.save()
+
+
+@receiver(pre_delete, sender=OrderItem)
+@receiver(pre_delete, sender=Basket)
+def product_quantity_update_delete(sender, instance, **kwargs):
+    print(f'pre_delete -> {sender}')
+    instance.product.quantity += instance.quantity
+    instance.product.save()
