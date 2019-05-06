@@ -104,7 +104,7 @@ body {
     text-decoration: none;
 }
 
-.product_list {
+.products_list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
