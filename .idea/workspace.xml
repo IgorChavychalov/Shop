@@ -4,7 +4,6 @@
     <list default="true" id="00ed52f0-32d1-4a6e-9d26-6acdbead273a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/orders_scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/orders_scripts.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,18 +20,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basketapp/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#0#76#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/order_detail.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -78,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/order_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+            <state relative-caret-position="-251">
+              <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -90,18 +77,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="49" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="49" />
+            <state relative-caret-position="440">
+              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/orders_scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="414">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/jquery.formset.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4492" />
           </provider>
         </entry>
       </file>
@@ -146,6 +140,8 @@
       <find>btn</find>
       <find>product_record i</find>
       <find>product_list</find>
+      <find>$('.order_total_quantity')</find>
+      <find>TOTAL_FORMS</find>
     </findStrings>
     <replaceStrings>
       <replace>src=&quot;/static/</replace>
@@ -156,6 +152,8 @@
       <replace>%}&quot;&gt;</replace>
       <replace>=%}&quot;&gt;</replace>
       <replace>get_menu</replace>
+      <replace>$orderTotalQuantity</replace>
+      <replace>TotalForms</replace>
     </replaceStrings>
     <dirStrings>
       <dir>F:\Репозитории\shop\static\js</dir>
@@ -229,7 +227,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1" />
     <option name="width" value="746" />
     <option name="height" value="894" />
@@ -427,20 +425,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553156061301</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Создан проект">
-      <created>1553156387462</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1553156387462</updated>
-    </task>
-    <task id="LOCAL-00002" summary="ДЗ-1. Создание django-проекта с html-версткой">
-      <created>1553247993123</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1553247993123</updated>
     </task>
     <task id="LOCAL-00003" summary="ДЗ-2:&#10;    -создан base шаблон">
       <created>1553252986599</created>
@@ -771,7 +755,21 @@
       <option name="project" value="LOCAL" />
       <updated>1557083470356</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="ДЗ-2.4:&#10;    -удаление возвращение продуктов в базу&#10;    -через сигналы&#10;    -quantity_arr, var price_arr&#10;    -обновление стоимости в ордерах">
+      <created>1557084659242</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1557084659242</updated>
+    </task>
+    <task id="LOCAL-00051" summary="ДЗ-2.4:&#10;    -удаление возвращение продуктов в базу&#10;    -через сигналы&#10;    -quantity_arr, var price_arr&#10;    -обновление стоимости в ордерах&#10;    -кнопки удаление и добавление продуктов">
+      <created>1557086703239</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1557086703239</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TodoView">
@@ -784,10 +782,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="746" height="894" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49676025" weight="0.31930694" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49676025" visible="true" weight="0.14321926" />
       <window_info id="DB Browser" order="1" weight="0.1664" />
       <window_info id="Structure" order="2" sideWeight="0.50323975" side_tool="true" weight="0.109836064" />
       <window_info id="Favorites" order="3" sideWeight="0.5024233" side_tool="true" weight="0.11531741" />
@@ -808,7 +805,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49676025" visible="true" weight="0.31930694" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49676025" visible="true" weight="0.31920904" />
       <window_info id="DB Browser" order="1" weight="0.1664" />
       <window_info id="Structure" order="2" sideWeight="0.50323975" side_tool="true" weight="0.109836064" />
       <window_info id="Favorites" order="3" sideWeight="0.5024233" side_tool="true" weight="0.11531741" />
@@ -901,8 +898,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ДЗ-6:&#10;    -корзина: сумма на панели&#10;    -hot_product&#10;    -корзина: удаление    &#10;    -страница продукта" />
-    <MESSAGE value="ДЗ-6:&#10;    -корзина: сумма на панели&#10;    -hot_product&#10;    -корзина: удаление    &#10;    -страница продукта&#10;    -безопастность" />
     <MESSAGE value="ДЗ-6:&#10;    -корзина: сумма на панели&#10;    -hot_product&#10;    -корзина: удаление    &#10;    -страница продукта&#10;    -@безопастность&#10;    -ajax: изменения количества товаров" />
     <MESSAGE value="ДЗ-7:&#10;    -админка: создана страница" />
     <MESSAGE value="ДЗ-7:&#10;    -админка: создана страница&#10;    -админка: create, update, delete" />
@@ -926,16 +921,11 @@
     <MESSAGE value="ДЗ-2.4:&#10;    -удаление возвращение продуктов в базу" />
     <MESSAGE value="ДЗ-2.4:&#10;    -удаление возвращение продуктов в базу&#10;    -через сигналы" />
     <MESSAGE value="ДЗ-2.4:&#10;    -удаление возвращение продуктов в базу&#10;    -через сигналы&#10;    -quantity_arr, var price_arr" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ-2.4:&#10;    -удаление возвращение продуктов в базу&#10;    -через сигналы&#10;    -quantity_arr, var price_arr" />
+    <MESSAGE value="ДЗ-2.4:&#10;    -удаление возвращение продуктов в базу&#10;    -через сигналы&#10;    -quantity_arr, var price_arr&#10;    -обновление стоимости в ордерах" />
+    <MESSAGE value="ДЗ-2.4:&#10;    -удаление возвращение продуктов в базу&#10;    -через сигналы&#10;    -quantity_arr, var price_arr&#10;    -обновление стоимости в ордерах&#10;    -кнопки удаление и добавление продуктов" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ-2.4:&#10;    -удаление возвращение продуктов в базу&#10;    -через сигналы&#10;    -quantity_arr, var price_arr&#10;    -обновление стоимости в ордерах&#10;    -кнопки удаление и добавление продуктов" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/authapp/templates/authapp/confirm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/authapp/templates/authapp/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1250,24 +1240,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/order_form.html">
+    <entry file="file://$PROJECT_DIR$/static/js/jquery.formset.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
-        </state>
+        <state relative-caret-position="-4492" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="49" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="49" />
+        <state relative-caret-position="440">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/orders_scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="414">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/order_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-251">
+          <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
         </state>
       </provider>
     </entry>
