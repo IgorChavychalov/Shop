@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00ed52f0-32d1-4a6e-9d26-6acdbead273a" name="Default Changelist" comment="">
+    <list default="true" id="00ed52f0-32d1-4a6e-9d26-6acdbead273a" name="Default Changelist" comment="ДЗ-2.5:&#10;    -отключение удалённых товаров в заказах&#10;    -обнавление цен&#10;    -requirements">
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/orders_scripts(старый).js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +24,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ordersapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
+            <state relative-caret-position="684">
               <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -35,7 +36,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
+            <state relative-caret-position="380">
               <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
             </state>
           </provider>
@@ -44,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ordersapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="743">
-              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+            <state relative-caret-position="2318">
+              <caret line="134" selection-start-line="134" selection-end-line="134" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -56,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="117" column="28" lean-forward="true" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
+            <state relative-caret-position="2375">
+              <caret line="125" column="1" selection-start-line="125" selection-start-column="1" selection-end-line="125" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -65,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ordersapp/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
+            <state relative-caret-position="38">
               <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
@@ -77,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/js/orders_scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1448">
-              <caret line="110" column="7" lean-forward="true" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
+            <state relative-caret-position="384">
+              <caret line="110" column="7" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -86,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ordersapp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="304">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -206,17 +207,17 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="width" value="851" />
-    <option name="height" value="894" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="101" />
+    <option name="y" value="43" />
+    <option name="width" value="1442" />
+    <option name="height" value="699" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -305,6 +306,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -736,10 +738,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="851" height="894" extended-state="0" />
-    <editor active="true" />
+    <frame x="90" y="54" width="1442" height="699" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49676025" visible="true" weight="0.2792128" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49676025" visible="true" weight="0.19450317" />
       <window_info id="DB Browser" order="1" weight="0.1664" />
       <window_info id="Structure" order="2" sideWeight="0.50323975" side_tool="true" weight="0.109836064" />
       <window_info id="Favorites" order="3" sideWeight="0.5024233" side_tool="true" weight="0.11531741" />
@@ -751,7 +752,7 @@
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32928312" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.20861372" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.20701754" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32974428" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32829374" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32974428" />
@@ -853,7 +854,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ДЗ-7:&#10;    -админка: создана страница&#10;    -user: create, update, delete&#10;    -категории: update" />
     <MESSAGE value="ДЗ-7:&#10;    -админка: создана страница&#10;    -user: create, update, delete&#10;    -категории: create, update, delete&#10;    -товары: create, update, delete, read" />
     <MESSAGE value="ДЗ-8:&#10;    -админка: создана страница&#10;    -user: create, update, delete&#10;    -категории: create, update, delete&#10;    -товары: create, update, delete, read&#10;    -коррекция шаблонов" />
     <MESSAGE value="ДЗ-8:&#10;    -админка: создана страница&#10;    -user: create, update, delete&#10;    -категории: create, update, delete&#10;    -товары: create, update, delete, read&#10;    -коррекция шаблонов&#10;    -pagination" />
@@ -878,7 +878,8 @@
     <MESSAGE value="ДЗ-2.4:&#10;    -удаление возвращение продуктов в базу&#10;    -через сигналы&#10;    -quantity_arr, var price_arr&#10;    -обновление стоимости в ордерах&#10;    -кнопки удаление и добавление продуктов&#10;    -странности с js" />
     <MESSAGE value="ДЗ-2.5:&#10;    -отключение удалённых товаров в заказах" />
     <MESSAGE value="ДЗ-2.5:&#10;    -отключение удалённых товаров в заказах&#10;    -обнавление цен" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ-2.5:&#10;    -отключение удалённых товаров в заказах&#10;    -обнавление цен" />
+    <MESSAGE value="ДЗ-2.5:&#10;    -отключение удалённых товаров в заказах&#10;    -обнавление цен&#10;    -requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ-2.5:&#10;    -отключение удалённых товаров в заказах&#10;    -обнавление цен&#10;    -requirements" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/authapp/templates/authapp/update.html">
@@ -1122,24 +1123,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/orders_scripts(старый).js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/orders_scripts(старый).js" />
     <entry file="file://$PROJECT_DIR$/static/js/jquery.formset.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ordersapp/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ordersapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/adminapp/templates/mainapp/product_detail.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1150,13 +1139,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/adminapp/templates/adminapp/product_update.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="117" column="28" lean-forward="true" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/adminapp/templates/authapp/shopuser_list.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1179,9 +1161,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ordersapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordersapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2318">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2375">
+          <caret line="125" column="1" selection-start-line="125" selection-start-column="1" selection-end-line="125" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ordersapp/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
+        <state relative-caret-position="38">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
@@ -1189,27 +1205,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ordersapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ordersapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="304">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -1218,8 +1217,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/orders_scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1448">
-          <caret line="110" column="7" lean-forward="true" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
+        <state relative-caret-position="384">
+          <caret line="110" column="7" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
         </state>
       </provider>
     </entry>
