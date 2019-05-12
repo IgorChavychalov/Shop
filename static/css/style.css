@@ -109,7 +109,11 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
-
+.product_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .product {
     margin: 10px 10px;
     width: 130px;
